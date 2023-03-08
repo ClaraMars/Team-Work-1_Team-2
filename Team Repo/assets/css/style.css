@@ -21,5 +21,12 @@
     --cyan: #0dcaf0;
     --white: #fff;
     --gray: #adb5bd;
-}
+    
+    .box1{
+        width: 50%; 
+        height:50%;
+        color:black;
+        background: 
+        opacity: 0.2;
+    }
  
