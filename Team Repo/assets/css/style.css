@@ -56,7 +56,11 @@ header p {
   line-height: 2;
   margin-bottom: 2em;
 }
+header .small-p{
+  font-size:smaller;
+}
 header .header-text {
+  padding-right: 2em;
   margin-left: 6%;
   flex: 1;
 }
@@ -84,5 +88,5 @@ header .header-image {
   background-size: cover;
   background-position: center;
   flex-basis: 50%;
-  min-height: 70vh;
+  min-height: 60vh;
 }
