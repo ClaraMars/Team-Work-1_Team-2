@@ -32,7 +32,6 @@ body {
 header {
   width: 100vw;
   height: 100vh;
-  border: 1px solid black;
 }
 
 header .header {
@@ -51,18 +50,17 @@ header h1 {
   font-weight: normal;
   font-style: italic;
 }
+header .small-p,
 header p {
-  /* margin: 0.9em; */
   line-height: 2;
-  margin-bottom: 2em;
+  margin: 1em 0;
 }
-header .small-p{
-  font-size:smaller;
+header .small-p {
+  font-size: smaller;
 }
 header .header-text {
   padding-right: 2em;
-  margin-left: 6%;
-  flex: 1;
+  margin-left: 5%;
 }
 header a {
   color: black;
@@ -74,19 +72,15 @@ header code {
 header button {
   padding: 0.7em 2em;
   text-align: center;
-  display: inline-block;
   cursor: pointer;
   background-color: var(--white);
   color: black;
   border: 0.1em solid var(--lightgray);
   border-radius: 2rem;
 }
-
-header .header-image {
-  background-image: url("../../img/banner.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  flex-basis: 50%;
-  min-height: 60vh;
+header .header-image img {
+  width: 50vw; 
+  height: 67vh; 
+  object-fit: cover;
+  object-position: 50% 50%; 
 }
