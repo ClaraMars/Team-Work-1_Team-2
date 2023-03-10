@@ -4,23 +4,28 @@
     border: 0;
     outline: none;
     box-sizing: border-box;
-    list-style: none;
 }
 
 :root{
+    /* General letter */
+    font-family: 'Assistant', sans-serif;
     font-size: .785rem;
-    --blue: #0d6efd;
-    --indigo: #6610f2;
-    --purple: #6f42c1;
-    --pink: #d63384;
-    --red: #dc3545;
-    --orange: #fd7e14;
-    --yellow: #ffc107;
-    --green: #198754;
-    --teal: #20c997;
-    --cyan: #0dcaf0;
-    --white: #fff;
-    --gray: #adb5bd;
+    color: black;
+    
+    --font-weight: 200;
+    --line-height: 1.7em;
+
+    /* Gray scale */
+    --white: #FFF;
+    --background-gray: #F2F2F2; /* Text backgrounds, border default button (Juanma) and dark gray in table (item 1, 3, 5) */
+    --border-section-gray: #ECECEC; /*Border big sections (Spotligh, Gallery and Additional Elements */
+    --general-gray: #CCC; /* Border buttons, border small sections, border icons, items grid, text in default button (Juanma), form borders, table borders and border box */
+    --button-gray: #C0C0C0; /* Juanma background Primary button */
+    --black: #000;
+
+    /* Other colors */
+    --red: rgb(223, 54, 54); /*Giselle*/
+    --light-blue: rgb(71, 211, 228); /*Juanma*/
+    --green-footer: #7AA194; /*Giselle*/
+    --blue-footer: #504651; /*Giselle*/
 }
- 
-main .gallery
