@@ -45,7 +45,7 @@ div {
   background-color: var(--blue);
   font-size: 2em;
   padding: 1em 0em;
-  font-family: Arial, Helvetica, sans-serif;
+
   border-bottom: 1px solid black;
 }
 .segundod > .level1 {
@@ -74,7 +74,7 @@ div {
   padding-bottom: 2.7em;
 }
 .tercerod {
-  font-family: Arial, Helvetica, sans-serif;
+  
   background-color: #5910ce;
   font-size: 2em;
   padding: 1em 0em 1em 0em;
@@ -98,7 +98,7 @@ div {
   padding-bottom: 1.6em;
 }
 .cuartod {
-    font-family: Arial, Helvetica, sans-serif;
+   
   background-color: #dc3545;
   font-size: 2em;
 }
@@ -118,7 +118,7 @@ div {
     line-height: 170%;
 }
 .quintod {
-  font-family: Arial, Helvetica, sans-serif;
+  
 background-color: #dc3545;
 font-size: 2em;
 }
