@@ -28,11 +28,16 @@
   --light-blue: rgb(71, 211, 228); /*Juanma*/
   --green-footer: #7AA194; /*Giselle*/
   --blue-footer: #504651; /*Giselle*/
-}
 
+  
+}
+body{
+  background-color: var(--white);
+}
 /* Header */
 header {
   width: 100vw;
+  /* height: 100vh; */
   height: auto;
 }
 /* fit the content inside the header and spotlight sections  */
@@ -63,6 +68,7 @@ section.spotlight1 .spotlight1-text,
 header p {
   margin: 1em 0;
   line-height: 1.5em;
+  font-size: 1.4rem;
 }
 
 /* adjust the size of header and spotlight text */
@@ -70,7 +76,7 @@ section.spotlight3 .spotlight3-text,
 section.spotlight2 .spotlight2-text,
 section.spotlight1 .spotlight1-text,
 header .small-p {
-  font-size: 0.785rem;
+  font-size: 1rem;
 }
 div.spotlight3-text,
 div.spotlight2-text,
@@ -127,9 +133,9 @@ section.spotlight1 {
   width: 100vw;
   height: auto;
 }
-section.spotlight3 h3,
-section.spotlight2 h3,
-section.spotlight1 h3 {
+section.spotlight3 h2,
+section.spotlight2 h2,
+section.spotlight1 h2 {
   font-size: 1.5rem;
   font-weight: normal;
   margin-bottom: 0.8em;
@@ -144,14 +150,35 @@ section.spotlight1 h3 {
   object-position: 25%;
 }
 
-/*set the image position to th spotlight2 */
+/*set the image position to the spotlight2 */
 .spotlight2-image img {
   float: right;
 }
 
 /* footer */
-div.footer{
+footer{
   background-color:#504651 ;
+  padding: 5rem;
 }
+footer .social-icons i{
+  border-radius: 50%;
+  background-color: var(--green-footer);
+  color:var(--white);
+  font-size: 1rem;
+  padding: 1em 1em;
+  margin: 0 0.5em;
 
+}
+footer h4 i{
+  color: var(--red);
+}
+footer h4{
+  color:var(--general-gray);
+  margin: 2% 0;
+  font-size: 1rem;
+
+}
+footer a{
+  color:var(--green-footer)
+}
 
