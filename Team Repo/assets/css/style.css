@@ -31,11 +31,12 @@ body {
 /* Header */
 header {
   width: 100vw;
-  height: 100vh;
+  height: 67vh;
 }
-
+/* fit the content inside the header and spotlight sections  */
+.spotlight1,
 header .header {
-  display: flex;
+  display:flex;
   align-items: center;
   justify-content: space-between;
   color: black;
@@ -50,37 +51,80 @@ header h1 {
   font-weight: normal;
   font-style: italic;
 }
+
+.spotlight1 .spotlight1-text,
 header .small-p,
 header p {
-  line-height: 2;
   margin: 1em 0;
+  line-height: 2;
 }
+
+/* adjust size of header and spotlight paragraph's */
+.spotlight1 .spotlight1-text,
 header .small-p {
   font-size: smaller;
 }
+.spotlight1-text,
 header .header-text {
   padding-right: 2em;
+}
+
+header .header-text {
   margin-left: 5%;
 }
+.spotlight1 a,
 header a {
   color: black;
 }
+
+/* color code for header and spotlight */
+.spotlight1 code,
 header code {
   background-color: #f1f1f1;
   padding: 0.1em;
 }
+
+/* button for header and spotlight */
+.button-spotlight1 button,
 header button {
-  padding: 0.7em 2em;
+  padding: 1em 2em;
   text-align: center;
   cursor: pointer;
   background-color: var(--white);
   color: black;
   border: 0.1em solid var(--lightgray);
   border-radius: 2rem;
+  font-size:smaller;
 }
+
 header .header-image img {
   width: 50vw; 
   height: 67vh; 
   object-fit: cover;
-  object-position: 50% 50%; 
+  object-position: 50%; 
+}
+/* --------------------------------- */
+/* Spotlight 1 */
+.spotlight1{
+  width: 100vw;
+  height: 35vh;
+  border: 1px solid red;
+}
+.spotlight1 h3{
+  font-size: 1.5rem;
+  font-weight: normal;
+  margin-bottom: 0.5em;
+}
+.spotlight1-text {
+padding: 4%;
+}
+.spotlight1-image img {
+  float:left;
+  width: 40vw; 
+  height: 35vh; 
+  object-fit: cover;
+  object-position: 25%;
+}
+.button-spotlight1 {
+  margin-top: 3%;
 }
