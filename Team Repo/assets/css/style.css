@@ -29,10 +29,6 @@
   --green-footer: #7AA194; /*Giselle*/
   --blue-footer: #504651; /*Giselle*/
 }
-body {
-  background-color: var(--white);
-  font-family: "Lato";
-}
 
 /* Header */
 header {
@@ -48,7 +44,7 @@ header .header {
   align-items: center;
   justify-content: space-between;
   color: black;
-  border-bottom: 1px solid var(--lightgray);
+  border-bottom: 1px solid var(--border-section-gray);
 }
 header span {
   color: var(--red);
@@ -96,7 +92,7 @@ section.spotlight3 code,
 section.spotlight2 code,
 section.spotlight1 code,
 header code {
-  background-color: var(--xx--lightgray);
+  background-color:var(--background-gray) ;
   padding: 0.1em;
 }
 
@@ -111,7 +107,7 @@ header button {
   cursor: pointer;
   background-color: var(--white);
   color: black;
-  border: 0.1em solid var(--lightgray);
+  border: 0.1em solid var(--general-gray);
   border-radius: 2rem;
   font-size: 0.785rem;
 }
@@ -130,8 +126,6 @@ section.spotlight2,
 section.spotlight1 {
   width: 100vw;
   height: auto;
-  
-  /* border-top: 1px solid var(--lightgray); */
 }
 section.spotlight3 h3,
 section.spotlight2 h3,
