@@ -34,9 +34,10 @@ header {
   height: 67vh;
 }
 /* fit the content inside the header and spotlight sections  */
-.spotlight1,
+section.spotlight2,
+section.spotlight1,
 header .header {
-  display:flex;
+  display: flex;
   align-items: center;
   justify-content: space-between;
   color: black;
@@ -51,8 +52,8 @@ header h1 {
   font-weight: normal;
   font-style: italic;
 }
-
-.spotlight1 .spotlight1-text,
+section.spotlight2 .spotlight2-text,
+section.spotlight1 .spotlight1-text,
 header .small-p,
 header p {
   margin: 1em 0;
@@ -60,11 +61,13 @@ header p {
 }
 
 /* adjust size of header and spotlight paragraph's */
-.spotlight1 .spotlight1-text,
+section.spotlight2 .spotlight2-text,
+section.spotlight1 .spotlight1-text,
 header .small-p {
   font-size: smaller;
 }
-.spotlight1-text,
+div.spotlight2-text,
+div.spotlight1-text,
 header .header-text {
   padding-right: 2em;
 }
@@ -72,19 +75,24 @@ header .header-text {
 header .header-text {
   margin-left: 5%;
 }
-.spotlight1 a,
+
+/*this give the color black to the header and spotlight links */
+section.spotlight2 a,
+section.spotlight1 a,
 header a {
   color: black;
 }
 
 /* color code for header and spotlight */
-.spotlight1 code,
+section.spotlight2 code,
+section.spotlight1 code,
 header code {
   background-color: #f1f1f1;
   padding: 0.1em;
 }
 
 /* button for header and spotlight */
+.button-spotlight2 button,
 .button-spotlight1 button,
 header button {
   padding: 1em 2em;
@@ -94,37 +102,46 @@ header button {
   color: black;
   border: 0.1em solid var(--lightgray);
   border-radius: 2rem;
-  font-size:smaller;
+  font-size: smaller;
 }
 
 header .header-image img {
-  width: 50vw; 
-  height: 67vh; 
+  width: 50vw;
+  height: 67vh;
   object-fit: cover;
-  object-position: 50%; 
+  object-position: 50%;
 }
 /* --------------------------------- */
-/* Spotlight 1 */
-.spotlight1{
+/* Spotlight */
+section.spotlight2,
+section.spotlight1 {
   width: 100vw;
-  height: 35vh;
-  border: 1px solid red;
+  height: 33vh;
+  border-top: 1px solid var(--lightgray);
 }
-.spotlight1 h3{
+section.spotlight2 h3,
+section.spotlight1 h3 {
   font-size: 1.5rem;
   font-weight: normal;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.2em;
 }
+.spotlight2-text,
 .spotlight1-text {
-padding: 4%;
+  padding: 4%;
 }
+.spotlight2-image img,
 .spotlight1-image img {
-  float:left;
-  width: 40vw; 
-  height: 35vh; 
+  float: left;
+  width: 34vw;
+  height: 33vh;
   object-fit: cover;
   object-position: 25%;
 }
+.button-spotlight2,
 .button-spotlight1 {
   margin-top: 3%;
+}
+/*set the image position to th spotlight2 */
+.spotlight2-image img {
+  float: right;
 }
