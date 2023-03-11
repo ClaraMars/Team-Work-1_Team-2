@@ -34,6 +34,7 @@ header {
   height: 67vh;
 }
 /* fit the content inside the header and spotlight sections  */
+section.spotlight3,
 section.spotlight2,
 section.spotlight1,
 header .header {
@@ -52,6 +53,8 @@ header h1 {
   font-weight: normal;
   font-style: italic;
 }
+/* adjust the margin and space between line of header and spotlight text */
+section.spotlight3 .spotlight3-text,
 section.spotlight2 .spotlight2-text,
 section.spotlight1 .spotlight1-text,
 header .small-p,
@@ -60,12 +63,14 @@ header p {
   line-height: 2;
 }
 
-/* adjust size of header and spotlight paragraph's */
+/* adjust the size of header and spotlight text */
+section.spotlight3 .spotlight3-text,
 section.spotlight2 .spotlight2-text,
 section.spotlight1 .spotlight1-text,
 header .small-p {
   font-size: smaller;
 }
+div.spotlight3-text,
 div.spotlight2-text,
 div.spotlight1-text,
 header .header-text {
@@ -77,6 +82,7 @@ header .header-text {
 }
 
 /*this give the color black to the header and spotlight links */
+section.spotlight3 a,
 section.spotlight2 a,
 section.spotlight1 a,
 header a {
@@ -84,6 +90,7 @@ header a {
 }
 
 /* color code for header and spotlight */
+section.spotlight3 code,
 section.spotlight2 code,
 section.spotlight1 code,
 header code {
@@ -92,6 +99,7 @@ header code {
 }
 
 /* button for header and spotlight */
+.button-spotlight3 button,
 .button-spotlight2 button,
 .button-spotlight1 button,
 header button {
@@ -113,22 +121,26 @@ header .header-image img {
 }
 /* --------------------------------- */
 /* Spotlight */
+section.spotlight3,
 section.spotlight2,
 section.spotlight1 {
   width: 100vw;
   height: 33vh;
   border-top: 1px solid var(--lightgray);
 }
+section.spotlight3 h3,
 section.spotlight2 h3,
 section.spotlight1 h3 {
   font-size: 1.5rem;
   font-weight: normal;
   margin-bottom: 0.2em;
 }
+.spotlight3-text,
 .spotlight2-text,
 .spotlight1-text {
   padding: 4%;
 }
+.spotlight3-image img,
 .spotlight2-image img,
 .spotlight1-image img {
   float: left;
@@ -137,6 +149,7 @@ section.spotlight1 h3 {
   object-fit: cover;
   object-position: 25%;
 }
+.button-spotlight3,
 .button-spotlight2,
 .button-spotlight1 {
   margin-top: 3%;
