@@ -6,28 +6,35 @@
   box-sizing: border-box;
   list-style: none;
 }
-
 :root {
+  /* General letter */
+  font-family: "Assistant", sans-serif;
   font-size: 0.785rem;
-  --blue: #0d6efd;
-  --indigo: #6610f2;
-  --purple: #6f42c1;
-  --pink: #d63384;
-  --red: #dc3545;
-  --orange: #fd7e14;
-  --yellow: #ffc107;
-  --green: #198754;
-  --teal: #20c997;
-  --cyan: #0dcaf0;
+  color: black;
+
+  --font-weight: 200;
+  --line-height: 1.7em;
+
+  /* Gray scale */
   --white: #fff;
-  --gray: #adb5bd;
+  --background-gray: #f2f2f2; /* Text backgrounds, border default button (Juanma) and dark gray in table (item 1, 3, 5) */
+  --border-section-gray: #ececec; /*Border big sections (Spotligh, Gallery and Additional Elements */
+  --general-gray: #ccc; /* Border buttons, border small sections, border icons, items grid, text in default button (Juanma), form borders, table borders and border box */
+  --button-gray: #c0c0c0; /* Juanma background Primary button */
+  --black: #000;
+
+  /* Other colors */
+  --red: rgb(223, 54, 54); /*Giselle*/
+  --light-blue: rgb(71, 211, 228); /*Juanma*/
+  --green-footer: #7aa194; /*Giselle*/
+  --blue-footer: #504651; /*Giselle*/
 }
+
 section {
   display: grid;
   grid-template-columns: 1.025fr 2fr;
 }
 div {
-
   margin-right: 22%;
   align-items: center;
 }
@@ -74,13 +81,10 @@ div {
   padding-bottom: 2.7em;
 }
 .tercerod {
-  
   background-color: #5910ce;
   font-size: 2em;
   padding: 1em 0em 1em 0em;
   border-bottom: 1px solid black;
-  
-   
 }
 .headsubtitle1 {
   font-size: 300%;
@@ -98,40 +102,38 @@ div {
   padding-bottom: 1.6em;
 }
 .cuartod {
-   
   background-color: #dc3545;
   font-size: 2em;
 }
 .headsubtitle2 {
-    font-size: 200%;
-    padding: 1.4em 0em .5em 0em;
+  font-size: 200%;
+  padding: 1.4em 0em 0.5em 0em;
 }
-.subtitle2{
-    font-size: 110%;
-    padding: 0em 0em 1.70em 0em;
-    font-style: italic;
+.subtitle2 {
+  font-size: 110%;
+  padding: 0em 0em 1.7em 0em;
+  font-style: italic;
 }
-.parrafo2{
-    font-size: 90%;
-    padding: 0em 0em 2.75em 0em;
-    border-bottom: 1px solid black;
-    line-height: 170%;
+.parrafo2 {
+  font-size: 90%;
+  padding: 0em 0em 2.75em 0em;
+  border-bottom: 1px solid black;
+  line-height: 170%;
 }
 .quintod {
-  
-background-color: #dc3545;
-font-size: 2em;
+  background-color: #dc3545;
+  font-size: 2em;
 }
 .headsubtitle3 {
   font-size: 200%;
-  padding: 1.4em 0em .5em 0em;
+  padding: 1.4em 0em 0.5em 0em;
 }
-.subtitle3{
+.subtitle3 {
   font-size: 110%;
-  padding: 0em 0em 1.70em 0em;
+  padding: 0em 0em 1.7em 0em;
   font-style: italic;
 }
-.parrafo3{
+.parrafo3 {
   font-size: 90%;
   padding: 0em 0em 2.75em 0em;
   border-bottom: 1px solid black;
