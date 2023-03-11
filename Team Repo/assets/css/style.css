@@ -13,7 +13,7 @@
     color: black;
     
     --font-weight: 200;
-    --line-height: 1.7em;
+    --line-height: 1.75em;
 
     /* Gray scale */
     --white: #FFF;
@@ -21,7 +21,7 @@
     --border-section-gray: #ECECEC; /*Border big sections (Spotligh, Gallery and Additional Elements */
     --general-gray: #CCC; /* Border buttons, border small sections, border icons, items grid, text in default button (Juanma), form borders, table borders and border box */
     --button-gray: #C0C0C0; /* Juanma background Primary button */
-    --black: #000;
+    --black: #000000;
 
     /* Other colors */
     --red: rgb(223, 54, 54); /*Giselle*/
@@ -30,3 +30,104 @@
     --blue-footer: #504651; /*Giselle*/
 }
 
+/* Gallery */
+
+main div.section{
+    text-align: center;
+    width: 75%;
+    margin: auto;
+}
+
+main div.section h2{
+    font-size: 3rem;
+    font-weight: var(--font-weight);
+    padding: 1.8em 0 .8em;
+}
+
+main div.section p{
+    font-size: 1.4rem;
+    font-weight: var(--font-weight);
+    line-height: var(--line-height);
+}
+
+main div.section p code{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: var(--background-gray);
+    padding: .2em .3em;
+    margin: 0 .2em;
+    border-radius: .4rem;
+}
+
+main div.section p a:visited{
+    color: var(--black);
+}
+
+main div.gallery{
+    margin-top: 5em;
+    display: flex;
+    overflow-x: scroll;
+}
+
+main div.gallery img{
+    margin: 0 -.1em;
+}
+
+/* main div.gallery div:hover{
+    background-color: rgba(0, 0, 0, .5);
+} */
+
+/* Items */
+
+main div.section div.items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    margin-top: 4em;
+    /* align-items: center;
+    justify-items: space-evenly;
+    justify-content: space-between; */
+}
+
+main div.section div.items div.card-items{
+    font-size: 1.4rem;
+    font-weight: var(--font-weight);
+    line-height: var(--line-height);
+    padding: 2.5em ;
+    border: 1px solid var(--general-gray);
+    display: grid;
+
+}
+
+
+main div.section div.items div.card-items div.icon{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    border: 5px solid var(--general-gray);
+    width: 4em;
+    height: 4em;
+    margin: auto;
+    border-radius: 50%;
+    /* max-width: 4em;
+    max-height: 4em; */
+    /* min-width: max-content;
+    min-height: max-content; */
+}
+
+main div.section div.items div.card-items div.icon i{
+    font-size: 2.5rem;
+    padding: .6em;
+    border: 1.5px solid var(--general-gray);
+    /* border-radius: 50%; */
+    /* min-width: 2.5em;
+    min-height: 2.5em; */
+    min-width: max-content;
+    min-height: max-content;
+}
+
+main div.section div.items div.card-items div.number{
+    font-size: 2.5rem;
+    /* font-weight: var(--font-weight); */
+    padding: 1em;
+    border: 1.5px solid var(--general-gray);
+}
