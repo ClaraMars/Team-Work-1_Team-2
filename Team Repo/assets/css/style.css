@@ -21,7 +21,8 @@
   --cyan: #0dcaf0;
   --white: #fff;
   --gray: #adb5bd;
-  --lightgray: #e7e7e7;
+  --lightgray: #e7e7e7;/*border-bottom header and spotlight*/
+  --xx--lightgray:#f1f1f1 /*background color used in <code>*/ 
 }
 body {
   background-color: var(--white);
@@ -31,17 +32,18 @@ body {
 /* Header */
 header {
   width: 100vw;
-  height: 67vh;
+  height: auto;
 }
 /* fit the content inside the header and spotlight sections  */
 section.spotlight3,
 section.spotlight2,
 section.spotlight1,
 header .header {
-  display: flex;
+  display:flex;
   align-items: center;
   justify-content: space-between;
   color: black;
+  border-bottom: 1px solid var(--lightgray);
 }
 header span {
   color: var(--red);
@@ -57,7 +59,6 @@ header h1 {
 section.spotlight3 .spotlight3-text,
 section.spotlight2 .spotlight2-text,
 section.spotlight1 .spotlight1-text,
-header .small-p,
 header p {
   margin: 1em 0;
   line-height: 2;
@@ -68,17 +69,13 @@ section.spotlight3 .spotlight3-text,
 section.spotlight2 .spotlight2-text,
 section.spotlight1 .spotlight1-text,
 header .small-p {
-  font-size: smaller;
+  font-size: 0.785rem;
 }
 div.spotlight3-text,
 div.spotlight2-text,
 div.spotlight1-text,
 header .header-text {
-  padding-right: 2em;
-}
-
-header .header-text {
-  margin-left: 5%;
+  padding: 0 3em;
 }
 
 /*this give the color black to the header and spotlight links */
@@ -94,7 +91,7 @@ section.spotlight3 code,
 section.spotlight2 code,
 section.spotlight1 code,
 header code {
-  background-color: #f1f1f1;
+  background-color: var(--xx--lightgray);
   padding: 0.1em;
 }
 
@@ -103,6 +100,7 @@ header code {
 .button-spotlight2 button,
 .button-spotlight1 button,
 header button {
+  margin-top: 3%;
   padding: 1em 2em;
   text-align: center;
   cursor: pointer;
@@ -110,12 +108,13 @@ header button {
   color: black;
   border: 0.1em solid var(--lightgray);
   border-radius: 2rem;
-  font-size: smaller;
+  font-size: 0.785rem;
 }
-
+/* header image img */
 header .header-image img {
+  float: right;
   width: 50vw;
-  height: 67vh;
+  height: 50vh;
   object-fit: cover;
   object-position: 50%;
 }
@@ -125,35 +124,26 @@ section.spotlight3,
 section.spotlight2,
 section.spotlight1 {
   width: 100vw;
-  height: 33vh;
-  border-top: 1px solid var(--lightgray);
+  height: auto;
+  
+  /* border-top: 1px solid var(--lightgray); */
 }
 section.spotlight3 h3,
 section.spotlight2 h3,
 section.spotlight1 h3 {
   font-size: 1.5rem;
   font-weight: normal;
-  margin-bottom: 0.2em;
-}
-.spotlight3-text,
-.spotlight2-text,
-.spotlight1-text {
-  padding: 4%;
 }
 .spotlight3-image img,
 .spotlight2-image img,
 .spotlight1-image img {
   float: left;
-  width: 34vw;
-  height: 33vh;
+  width: 37vw;
+  height: 35vh;
   object-fit: cover;
   object-position: 25%;
 }
-.button-spotlight3,
-.button-spotlight2,
-.button-spotlight1 {
-  margin-top: 3%;
-}
+
 /*set the image position to th spotlight2 */
 .spotlight2-image img {
   float: right;
