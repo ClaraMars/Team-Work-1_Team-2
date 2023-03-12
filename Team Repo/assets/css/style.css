@@ -34,7 +34,6 @@ body {
   background-color: var(--white);
 }
 /* Header */
-main,
 header {
   width: 100vw;
   height: 100vh;
@@ -43,11 +42,12 @@ header {
 main section.spotlight3,
 main section.spotlight2,
 main section.spotlight1,
-header .header {
+header section.header {
   display: flex;
-  align-items: center;
+  padding: 6em 2em;
   justify-content: space-between;
-  color: black;
+  align-items: center;
+  color: var(--black);
   border-bottom: 1px solid var(--border-section-gray);
 }
 header span {
@@ -60,23 +60,24 @@ header h1 {
   font-weight: normal;
   font-style: italic;
   font-family: "Quicksand";
+  justify-content: center;
 }
-/* adjust the margin and space between line of header and spotlight text */
-main section.spotlight3 .spotlight3-text,
-main section.spotlight2 .spotlight2-text,
-main section.spotlight1 .spotlight1-text,
-header p {
+/* adjust the margin and space between line of header*/
+header div.header-text p {
   margin: 1em 0;
-  line-height: var(--line-height);
   font-size: 1.4rem;
+  font-weight: var(--font-weight);
+  line-height: var(--line-height);
 }
 
 /* adjust the size of header and spotlight text */
-main section.spotlight3 .spotlight3-text,
-main section.spotlight2 .spotlight2-text,
-main section.spotlight1 .spotlight1-text,
-header .small-p {
+main div.spotlight3-text,
+main div.spotlight2-text,
+main div.spotlight1-text,
+header div.header-text .small-p {
   font-size: 1rem;
+  font-weight: var(--font-weight);
+  line-height: var(--line-height);
 }
 main div.spotlight3-text,
 main div.spotlight2-text,
@@ -94,12 +95,13 @@ header a {
 }
 
 /* color code for header and spotlight */
-main section.spotlight3 code,
-main section.spotlight2 code,
-main section.spotlight1 code,
-header code {
+main section.spotlight3 p code,
+main section.spotlight2 p code,
+main section.spotlight1 p code,
+header p code {
   background-color: var(--background-gray);
-  padding: 0.1em;
+  padding: 0.2em 0.3em;
+  margin: 0 0.2em;
 }
 
 /* button for header and spotlight */
@@ -117,8 +119,15 @@ header button {
   border-radius: 2rem;
   font-size: 0.785rem;
 }
+header div.button-header {
+  margin-bottom: 1em;
+}
+
+header div.header-image {
+  display: flex;
+}
 /* header image img */
-header .header-image img {
+header div.header-image img {
   float: right;
   width: 50vw;
   height: 70vh;
@@ -152,7 +161,7 @@ main .spotlight2-image img {
 /* footer */
 footer.footer-nav {
   display: flex;
-  flex-flow:wrap;
+  flex-flow: wrap;
   margin-right: auto;
   margin-left: auto;
   align-items: center;
@@ -160,22 +169,22 @@ footer.footer-nav {
   padding: 5rem;
   width: 100%;
   justify-content: center;
-  
 }
-
-footer .footer-nav-social ul{
+footer .footer-nav-social ul {
   display: flex;
   list-style-type: none;
 }
-footer .footer-nav-social ul il{
+footer .footer-nav-social ul il {
   margin-right: 1rem;
 }
 footer span {
   color: var(--green-footer);
+  padding: 0 -.5em;
 }
+
 footer span i:hover {
   border-radius: 50%;
-  padding: 0 0.5em;
+  padding: .2em;
   color: var(--green-footer);
   background-color: var(--white);
   transition: color 0.3s ease-in;
@@ -183,14 +192,15 @@ footer span i:hover {
 footer .fab {
   color: white;
 }
-footer h4 i {
+footer div.copyright h4 i {
   color: var(--red);
 }
-footer h4 {
+footer div.copyright h4 {
   color: var(--general-gray);
   font-size: 1.4rem;
   margin-top: 2em;
 }
 footer .codespace {
   color: var(--green-footer);
+  text-decoration: none;
 }
