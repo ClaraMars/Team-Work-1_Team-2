@@ -9,6 +9,7 @@
 :root {
   /* General letter */
   font-family: "Assistant", sans-serif;
+  font-family: "Quicksand", sans-serif; /*used in title CODE TEAM - header */
   font-size: 0.785rem;
   color: black;
 
@@ -39,7 +40,6 @@ header {
   height: 100vh;
 }
 /* fit the content inside the header and spotlight sections  */
-footer .social-icons,
 main section.spotlight3,
 main section.spotlight2,
 main section.spotlight1,
@@ -59,6 +59,7 @@ header h1 {
   font-size: 2.5rem;
   font-weight: normal;
   font-style: italic;
+  font-family: "Quicksand";
 }
 /* adjust the margin and space between line of header and spotlight text */
 main section.spotlight3 .spotlight3-text,
@@ -66,7 +67,7 @@ main section.spotlight2 .spotlight2-text,
 main section.spotlight1 .spotlight1-text,
 header p {
   margin: 1em 0;
-  line-height:var(--line-height);
+  line-height: var(--line-height);
   font-size: 1.4rem;
 }
 
@@ -149,36 +150,37 @@ main .spotlight2-image img {
 }
 
 /* footer */
-footer {
+footer.footer-nav {
   display: flex;
-  height: auto;
-  background-color: #504651;
-  /* padding: -10%; */
+  flex-flow:wrap;
+  margin-right: auto;
+  margin-left: auto;
   align-items: center;
-}
-footer .footer{
-  border: 2px solid black;
-  padding: 1rem;
-  margin: 0 center;
-  align-content: center;
+  background-color: var(--blue-footer);
+  padding: 5rem;
+  width: 100%;
+  justify-content: center;
   
 }
 
-footer .social-icons{
-  border-bottom: 0;
-  margin-top: 50%;
+footer .footer-nav-social ul{
+  display: flex;
+  list-style-type: none;
+}
+footer .footer-nav-social ul il{
+  margin-right: 1rem;
 }
 footer span {
   color: var(--green-footer);
 }
 footer span i:hover {
   border-radius: 50%;
-  padding: 0.5rem 0;
+  padding: 0 0.5em;
   color: var(--green-footer);
   background-color: var(--white);
   transition: color 0.3s ease-in;
 }
-footer .fab{
+footer .fab {
   color: white;
 }
 footer h4 i {
@@ -186,8 +188,8 @@ footer h4 i {
 }
 footer h4 {
   color: var(--general-gray);
-  margin: 10% 2%;
-  font-size: 1rem;
+  font-size: 1.4rem;
+  margin-top: 2em;
 }
 footer .codespace {
   color: var(--green-footer);
