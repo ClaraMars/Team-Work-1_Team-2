@@ -11,7 +11,7 @@
     font-family: 'Assistant', sans-serif;
     font-size: .785rem;
     color: black;
-    
+
     --font-weight: 200;
     --line-height: 1.75em;
 
@@ -58,7 +58,7 @@ main div.section p code{
     border-radius: .4rem;
 }
 
-main div.section p a:visited{
+main div.section p a{
     color: var(--black);
 }
 
@@ -78,56 +78,99 @@ main div.gallery img{
 
 /* Items */
 
-main div.section div.items{
+main div.section div#items{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, 1fr);
     margin-top: 4em;
-    /* align-items: center;
-    justify-items: space-evenly;
-    justify-content: space-between; */
+    margin-bottom: 7em;
 }
 
-main div.section div.items div.card-items{
+main div.section div#items div.card-items{
     font-size: 1.4rem;
     font-weight: var(--font-weight);
     line-height: var(--line-height);
-    padding: 2.5em ;
-    border: 1px solid var(--general-gray);
-    display: grid;
-
+    padding: 2.2em 2.6em ;
+    border-right: 1px solid var(--general-gray);
+    border-bottom: 1px solid var(--general-gray);
 }
 
+/* Quitar bordes laterales y bottom */
 
-main div.section div.items div.card-items div.icon{
-    display: grid;
-    justify-items: center;
-    align-items: center;
-    border: 5px solid var(--general-gray);
-    width: 4em;
-    height: 4em;
-    margin: auto;
+main div.section div#items div#ten,
+main div.section div#items div#eleven,
+main div.section div#items div#twelve{
+    border-bottom: none;
+}
+
+main div.section div#items div#three,
+main div.section div#items div#six,
+main div.section div#items div#nine,
+main div.section div#items div#twelve{
+    border-right: none;
+}
+
+main div.section div#items div.card-items div.icon{
+    border: 1.5px solid var(--general-gray);
     border-radius: 50%;
-    /* max-width: 4em;
-    max-height: 4em; */
-    /* min-width: max-content;
-    min-height: max-content; */
+    width: 3.5em;
+    height: 3.5em;
+    margin: auto;
 }
 
-main div.section div.items div.card-items div.icon i{
-    font-size: 2.5rem;
-    padding: .6em;
-    border: 1.5px solid var(--general-gray);
-    /* border-radius: 50%; */
-    /* min-width: 2.5em;
-    min-height: 2.5em; */
-    min-width: max-content;
-    min-height: max-content;
+main div.section div#items div.card-items div.icon i{
+    font-size: 1.9rem;
+    margin-top: .75em;
 }
 
-main div.section div.items div.card-items div.number{
+main div.section div#items div.card-items div.number{
     font-size: 2.5rem;
-    /* font-weight: var(--font-weight); */
-    padding: 1em;
-    border: 1.5px solid var(--general-gray);
+    padding: .8em;
+}
+
+/* Additional Elements */
+
+main div.big-section{
+    margin-top: 5em;
+    border-top: 1.5px solid var(--border-section-gray);
+}
+
+main div.big-section div.section div.additionalElements{
+    margin: 3em;
+    padding: 4em 0;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    justify-items: left;
+    border-bottom: 1.5px solid var(--general-gray);
+}
+
+main div.big-section div.section div.additionalElements h3{
+    font-size: 2rem;
+    font-weight: var(--font-weight);
+}
+
+main div.big-section div.section div.additionalElements div{
+    font-size: 1.4rem;
+    font-weight: var(--font-weight);
+    line-height: var(--line-height);
+}
+
+main div.big-section div.section div.additionalElements div span#bold{
+    font-weight: bold;
+}
+
+main div.big-section div.section div.additionalElements div span#italic{
+    font-style: italic;
+}
+
+main div.big-section div.section div.additionalElements div code{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: var(--background-gray);
+    padding: .2em .3em;
+    margin: 0 .2em;
+    border-radius: .4rem;
+}
+
+main div.big-section div.section div.additionalElements div a{
+    color: var(--black);
 }
