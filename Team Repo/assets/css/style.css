@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
   border: 0;
@@ -6,46 +6,45 @@
   box-sizing: border-box;
 }
 
-:root{
+:root {
   /* General letter */
-  font-family: 'Assistant', sans-serif;
-  font-size: .785rem;
+  font-family: "Assistant", sans-serif;
+  font-size: 0.785rem;
   color: black;
-  
+
   --font-weight: 200;
   --line-height: 1.7em;
 
   /* Gray scale */
-  --white: #FFF;
-  --background-gray: #F2F2F2; /* Text backgrounds, border default button (Juanma) and dark gray in table (item 1, 3, 5) */
-  --border-section-gray: #ECECEC; /*Border big sections (Spotligh, Gallery and Additional Elements */
-  --general-gray: #CCC; /* Border buttons, border small sections, border icons, items grid, text in default button (Juanma), form borders, table borders and border box */
-  --button-gray: #C0C0C0; /* Juanma background Primary button */
+  --white: #fff;
+  --background-gray: #f2f2f2; /* Text backgrounds, border default button (Juanma) and dark gray in table (item 1, 3, 5) */
+  --border-section-gray: #ececec; /*Border big sections (Spotligh, Gallery and Additional Elements */
+  --general-gray: #ccc; /* Border buttons, border small sections, border icons, items grid, text in default button (Juanma), form borders, table borders and border box */
+  --button-gray: #c0c0c0; /* Juanma background Primary button */
   --black: #000;
 
   /* Other colors */
   --red: rgb(223, 54, 54); /*Giselle*/
   --light-blue: rgb(71, 211, 228); /*Juanma*/
-  --green-footer: #7AA194; /*Giselle*/
+  --green-footer: #7aa194; /*Giselle*/
   --blue-footer: #504651; /*Giselle*/
-
-  
 }
-body{
+body {
   background-color: var(--white);
 }
 /* Header */
+main,
 header {
   width: 100vw;
-  /* height: 100vh; */
-  height: auto;
+  height: 100vh;
 }
 /* fit the content inside the header and spotlight sections  */
-section.spotlight3,
-section.spotlight2,
-section.spotlight1,
+footer .social-icons,
+main section.spotlight3,
+main section.spotlight2,
+main section.spotlight1,
 header .header {
-  display:flex;
+  display: flex;
   align-items: center;
   justify-content: space-between;
   color: black;
@@ -62,50 +61,50 @@ header h1 {
   font-style: italic;
 }
 /* adjust the margin and space between line of header and spotlight text */
-section.spotlight3 .spotlight3-text,
-section.spotlight2 .spotlight2-text,
-section.spotlight1 .spotlight1-text,
+main section.spotlight3 .spotlight3-text,
+main section.spotlight2 .spotlight2-text,
+main section.spotlight1 .spotlight1-text,
 header p {
   margin: 1em 0;
-  line-height: 1.5em;
+  line-height:var(--line-height);
   font-size: 1.4rem;
 }
 
 /* adjust the size of header and spotlight text */
-section.spotlight3 .spotlight3-text,
-section.spotlight2 .spotlight2-text,
-section.spotlight1 .spotlight1-text,
+main section.spotlight3 .spotlight3-text,
+main section.spotlight2 .spotlight2-text,
+main section.spotlight1 .spotlight1-text,
 header .small-p {
   font-size: 1rem;
 }
-div.spotlight3-text,
-div.spotlight2-text,
-div.spotlight1-text,
+main div.spotlight3-text,
+main div.spotlight2-text,
+main div.spotlight1-text,
 header .header-text {
   padding: 0 3em;
 }
 
 /*this give the color black to the header and spotlight links */
-section.spotlight3 a,
-section.spotlight2 a,
-section.spotlight1 a,
+main section.spotlight3 a,
+main section.spotlight2 a,
+main section.spotlight1 a,
 header a {
   color: black;
 }
 
 /* color code for header and spotlight */
-section.spotlight3 code,
-section.spotlight2 code,
-section.spotlight1 code,
+main section.spotlight3 code,
+main section.spotlight2 code,
+main section.spotlight1 code,
 header code {
-  background-color:var(--background-gray) ;
+  background-color: var(--background-gray);
   padding: 0.1em;
 }
 
 /* button for header and spotlight */
-.button-spotlight3 button,
-.button-spotlight2 button,
-.button-spotlight1 button,
+main .button-spotlight3 button,
+main .button-spotlight2 button,
+main .button-spotlight1 button,
 header button {
   margin-top: 3%;
   padding: 1em 2em;
@@ -121,64 +120,75 @@ header button {
 header .header-image img {
   float: right;
   width: 50vw;
-  height: 65vh;
-  object-fit: cover;
+  height: 70vh;
+  background-image: cover;
   object-position: 50%;
 }
 /* --------------------------------- */
 /* Spotlight */
-section.spotlight3,
-section.spotlight2,
-section.spotlight1 {
-  width: 100vw;
-  height: auto;
-}
-section.spotlight3 h2,
-section.spotlight2 h2,
-section.spotlight1 h2 {
+main section.spotlight3 h2,
+main section.spotlight2 h2,
+main section.spotlight1 h2 {
   font-size: 1.5rem;
   font-weight: normal;
   margin-bottom: 0.8em;
 }
-.spotlight3-image img,
-.spotlight2-image img,
-.spotlight1-image img {
+main .spotlight3-image img,
+main .spotlight2-image img,
+main .spotlight1-image img {
   float: left;
   width: 37vw;
   height: 35vh;
-  object-fit: cover;
+  background-image: cover;
   object-position: 25%;
 }
 
 /*set the image position to the spotlight2 */
-.spotlight2-image img {
+main .spotlight2-image img {
   float: right;
 }
 
 /* footer */
-footer{
-  background-color:#504651 ;
-  padding: 5rem;
+footer {
+  display: flex;
+  height: auto;
+  background-color: #504651;
+  /* padding: -10%; */
+  align-items: center;
 }
-footer .social-icons i{
-  border-radius: 50%;
-  background-color: var(--green-footer);
-  color:var(--white);
-  font-size: 1rem;
-  padding: 1em 1em;
-  margin: 0 0.5em;
+footer .footer{
+  border: 2px solid black;
+  padding: 1rem;
+  margin: 0 center;
+  align-content: center;
+  
+}
 
+footer .social-icons{
+  border-bottom: 0;
+  margin-top: 50%;
 }
-footer h4 i{
+footer span {
+  color: var(--green-footer);
+}
+footer span i:hover {
+  border-radius: 50%;
+  padding: 0.5rem 0;
+  color: var(--green-footer);
+  background-color: var(--white);
+  transition: color 0.3s ease-in;
+}
+footer .fab{
+  color: white;
+}
+footer h4 i {
   color: var(--red);
 }
-footer h4{
-  color:var(--general-gray);
-  margin: 2% 0;
+footer h4 {
+  color: var(--general-gray);
+  margin: 10% 2%;
   font-size: 1rem;
-
 }
-footer a{
-  color:var(--green-footer)
+footer .codespace {
+  color: var(--green-footer);
 }
-
