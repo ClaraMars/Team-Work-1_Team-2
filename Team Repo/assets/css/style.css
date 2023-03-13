@@ -42,48 +42,52 @@ header {
 main section.spotlight3,
 main section.spotlight2,
 main section.spotlight1,
-header section.header {
+header .header {
   display: flex;
-  padding: 6em 2em;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   color: var(--black);
   border-bottom: 1px solid var(--border-section-gray);
+  width: 100%;
+  height:auto;
+}
+
+/*div header-text*/
+
+header div.header-text{
+  display: flex;
+  padding: 3em 3em;
+  flex-flow: wrap;
+  align-items:center;
 }
 header span {
   color: var(--red);
   font-style: italic;
   font-weight: bold;
 }
+/*header title*/
 header h1 {
-  font-size: 2.5rem;
+  font-family: "Quicksand";
+  font-size: 3.5rem;
   font-weight: normal;
   font-style: italic;
-  font-family: "Quicksand";
-  justify-content: center;
 }
-/* adjust the margin and space between line of header*/
-header div.header-text p {
-  margin: 1em 0;
+/* div header-text first paragraph big*/
+header div.header-text p.big {
   font-size: 1.4rem;
+  margin: 1em 0;
   font-weight: var(--font-weight);
   line-height: var(--line-height);
 }
 
 /* adjust the size of header and spotlight text */
-main div.spotlight3-text,
-main div.spotlight2-text,
-main div.spotlight1-text,
-header div.header-text .small-p {
-  font-size: 1rem;
+main div.spotlight3-text p,
+main div.spotlight2-text p,
+main div.spotlight1-text p,
+header div.header-text p {
   font-weight: var(--font-weight);
   line-height: var(--line-height);
-}
-main div.spotlight3-text,
-main div.spotlight2-text,
-main div.spotlight1-text,
-header .header-text {
-  padding: 0 3em;
+  margin-bottom: 2em;
 }
 
 /*this give the color black to the header and spotlight links */
@@ -99,6 +103,7 @@ main section.spotlight3 p code,
 main section.spotlight2 p code,
 main section.spotlight1 p code,
 header p code {
+  font-family: "Courier New", Courier, monospace;
   background-color: var(--background-gray);
   padding: 0.2em 0.3em;
   margin: 0 0.2em;
@@ -109,7 +114,6 @@ main .button-spotlight3 button,
 main .button-spotlight2 button,
 main .button-spotlight1 button,
 header button {
-  margin-top: 3%;
   padding: 1em 2em;
   text-align: center;
   cursor: pointer;
@@ -119,42 +123,46 @@ header button {
   border-radius: 2rem;
   font-size: 0.785rem;
 }
-header div.button-header {
-  margin-bottom: 1em;
-}
 
-header div.header-image {
-  display: flex;
-}
 /* header image img */
 header div.header-image img {
+  display: flex;
   float: right;
   width: 50vw;
-  height: 70vh;
-  background-image: cover;
+  height: 100vh;
+  object-fit: cover;
   object-position: 50%;
 }
+
 /* --------------------------------- */
 /* Spotlight */
 main section.spotlight3 h2,
 main section.spotlight2 h2,
 main section.spotlight1 h2 {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   font-weight: normal;
   margin-bottom: 0.8em;
 }
-main .spotlight3-image img,
-main .spotlight2-image img,
-main .spotlight1-image img {
+main div.spotlight3-text,
+main div.spotlight2-text,
+main div.spotlight1-text { 
+  display: flex;
+  padding: 3em 3em;
+  flex-flow: wrap;
+  
+ } 
+main div.spotlight3-image img,
+main div.spotlight2-image img,
+main div.spotlight1-image img {
   float: left;
   width: 37vw;
-  height: 35vh;
-  background-image: cover;
+  height: 45vh;
+  object-fit: cover;
   object-position: 25%;
 }
 
 /*set the image position to the spotlight2 */
-main .spotlight2-image img {
+main div.spotlight2-image img {
   float: right;
 }
 
@@ -169,6 +177,7 @@ footer.footer-nav {
   background-color: var(--blue-footer);
   padding: 5rem;
   width: 100%;
+  /* overflow:hidden; */
 }
 footer .footer-nav-social ul {
   display: flex;
@@ -183,7 +192,7 @@ footer span {
 
 footer span i:hover {
   border-radius: 50%;
-  padding: .2em;
+  padding: 0.2em;
   justify-content: center;
   color: var(--green-footer);
   background-color: var(--white);
@@ -192,10 +201,10 @@ footer span i:hover {
 footer .fab {
   color: white;
 }
-footer div.copyright h4 i {
+footer .copyright h4 i {
   color: var(--red);
 }
-footer div.copyright h4 {
+footer .copyright h4 {
   color: var(--general-gray);
   font-size: 1.4rem;
   margin-top: 2em;
