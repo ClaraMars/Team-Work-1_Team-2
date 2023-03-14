@@ -183,14 +183,17 @@ footer.footer-nav {
   text-align: center!important;
 }
 /* social-icon to ajuste the icon size */
+footer .fa-brands,
 footer .fa {
   padding: 1em;
   font-size: 2em;
   width: 3em;
+  margin: 0 0.3em;
   text-decoration: none;
   border-radius: 50%;
 }
 /* hover efect with mouse on top */
+footer .fa-brands:hover,
 footer .fa:hover {
     background:var(--white);
     color:var(--green-footer);
