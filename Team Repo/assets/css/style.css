@@ -60,6 +60,7 @@ header div.header-text {
   flex-flow: wrap;
   align-items: center;
 }
+/* header "red" CODE span */
 header span {
   color: var(--red);
   font-style: italic;
@@ -143,6 +144,8 @@ main section.spotlight1 h2 {
   font-weight: normal;
   margin-bottom: 0.8em;
 }
+
+/* spotlight text */
 main div.spotlight3-text,
 main div.spotlight2-text,
 main div.spotlight1-text {
@@ -150,6 +153,7 @@ main div.spotlight1-text {
   padding: 3em 3em;
   flex-flow: wrap;
 }
+/* spotlight settings images  */
 main div.spotlight3-image img,
 main div.spotlight2-image img,
 main div.spotlight1-image img {
@@ -160,10 +164,13 @@ main div.spotlight1-image img {
   object-position: 25%;
 }
 
-/*set the image position to the spotlight2 */
+/*set spotlight2 images position  */
 main div.spotlight2-image img {
   float: right;
 }
+
+
+/* ------------------------------------ */
 
 /* footer */
 footer.footer-nav {
@@ -175,7 +182,7 @@ footer.footer-nav {
   width: 100%;
   text-align: center!important;
 }
-
+/* social-icon to ajuste the icon size */
 footer .fa {
   padding: 1em;
   font-size: 2em;
@@ -183,13 +190,13 @@ footer .fa {
   text-decoration: none;
   border-radius: 50%;
 }
-
+/* hover efect with mouse on top */
 footer .fa:hover {
     background:var(--white);
     color:var(--green-footer);
 }
 
-
+/* set the icon color */
 footer .fa-github,
 footer .fa-linkedin,
 footer .fa-instagram,
@@ -199,60 +206,20 @@ footer .fa-facebook-f {
   color: white;
 }
 
- /* footer .footer-nav-social ul {
-  display: flex;
-  list-style-type: none;
-}
-footer .footer-nav-social ul il {
-  margin-right: 1rem;
-} */
-
-/* footer span {
-  color: var(--green-footer);
-} */
-
-/* footer .fa:hover {
-  /* border-radius: 50%; */
-  /* padding: 0.15em; */
-  /* justify-content: center;
-  color: var(--green-footer);
-  opacity: 0.7; */
-
-  /* background: */
-  /* transition: color 0.3s ease-in; */
-/* }  */
-/* footer .fa-facebook-f {
-  color:var(--green-footer);
-  background:var(--blue-footer);
-}
-footer .fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 30px;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 50%;
-}  */
+/* copyright heart icon color */
 footer .copyright h4 i {
   color: var(--red);
 }
+
+/* copyright text settings*/
 footer .copyright h4 {
   color: var(--general-gray);
   font-size: 1.4rem;
   margin-top: 2em;
 }
+
+/* copyright CODE SPACE link */
 footer .codespace {
   color: var(--green-footer);
   text-decoration: none;
 }
-
-
-/* span.i:hover {
-    opacity: 0.7;
-    background: red;
-} */
-
-/* .fa-facebook {
-  background: #3B5998;
-  color: white;
-} */
