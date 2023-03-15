@@ -29,9 +29,6 @@
   --green-footer: #7aa194; /*Giselle*/
   --blue-footer: #504651; /*Giselle*/
 }
-body {
-  /* background-color: var(--white); */
-}
 /* Header */
 header {
   width: 100vw;
@@ -51,15 +48,17 @@ header .header {
   height: auto;
 }
 
-/*div header-text*/
-
+/*div header-text and spotlight text */
+main div.spotlight3-text,
+main div.spotlight2-text,
+main div.spotlight1-text,
 header div.header-text {
   display: flex;
   padding: 3em 3em;
   flex-flow: wrap;
   align-items: center;
 }
-/* header "red" CODE span */
+/* header "red" CODE title span */
 header span {
   color: var(--red);
   font-style: italic;
@@ -123,6 +122,7 @@ header button {
   border-radius: 2rem;
   font-size: 0.785rem;
 }
+/* button hover */
 main .button-spotlight3 button:hover,
 main .button-spotlight2 button:hover,
 main .button-spotlight1 button:hover,
@@ -151,20 +151,12 @@ main section.spotlight1 h2 {
   margin-bottom: 0.8em;
 }
 
-/* spotlight text */
-main div.spotlight3-text,
-main div.spotlight2-text,
-main div.spotlight1-text {
-  display: flex;
-  padding: 3em 3em;
-  flex-flow: wrap;
-}
 /* spotlight settings images  */
 main div.spotlight3-image img,
 main div.spotlight2-image img,
 main div.spotlight1-image img {
   float: left;
-  width: 37vw;
+  width: 35vw;
   height: 45vh;
   object-fit: cover;
   object-position: 25%;
