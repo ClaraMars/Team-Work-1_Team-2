@@ -9,7 +9,6 @@
 :root {
   /* General letter */
   font-family: "Assistant", sans-serif;
-  font-family: "Quicksand", sans-serif; /*used in title CODE TEAM - header */
   font-size: 0.785rem;
   color: black;
 
@@ -31,7 +30,7 @@
   --blue-footer: #504651; /*Giselle*/
 }
 body {
-  background-color: var(--white);
+  /* background-color: var(--white); */
 }
 /* Header */
 header {
@@ -92,9 +91,9 @@ header div.header-text p {
 }
 
 /*this give the color black to the header and spotlight links */
-main section.spotlight3 a,
-main section.spotlight2 a,
-main section.spotlight1 a,
+main div.spotlight3-text a,
+main div.spotlight2-text a,
+main div.spotlight1-text a,
 header a {
   color: black;
 }
@@ -124,6 +123,13 @@ header button {
   border-radius: 2rem;
   font-size: 0.785rem;
 }
+main .button-spotlight3 button:hover,
+main .button-spotlight2 button:hover,
+main .button-spotlight1 button:hover,
+header button:hover {
+  border-color:var( --light-blue);
+}
+
 
 /* header image img */
 header div.header-image img {
