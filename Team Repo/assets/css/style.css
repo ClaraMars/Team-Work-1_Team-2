@@ -113,9 +113,8 @@ header button {
 /* button hover */
 main .button-spotlight button:hover,
 header button:hover {
-  border-color:var( --light-blue);
+  border-color: var(--light-blue);
 }
-
 
 /* header image img */
 header div.header-image img {
@@ -136,7 +135,7 @@ main section.spotlight h2 {
 }
 
 /* spotlight settings images  */
-main div.spotlight2-image img, 
+main div.spotlight2-image img,
 main div.spotlight-image img {
   float: left;
   width: 35vw;
@@ -150,7 +149,6 @@ main div.spotlight2-image img {
   float: right;
 }
 
-
 /* ------------------------------------ */
 
 /* footer */
@@ -161,7 +159,7 @@ footer.footer-nav {
   background-color: var(--blue-footer);
   padding: 5rem;
   width: 100%;
-  text-align: center!important;
+  text-align: center !important;
 }
 /* social-icon to ajuste the icon size */
 footer .fa-brands,
@@ -176,17 +174,14 @@ footer .fa {
 /* hover efect with mouse on top */
 footer .fa-brands:hover,
 footer .fa:hover {
-    background:var(--white);
-    color:var( --light-blue);
+  background: var(--white);
+  color: var(--light-blue);
 }
 
 /* set the icon color */
-footer .fa-github,
-footer .fa-linkedin,
-footer .fa-instagram,
-footer .fa-twitter,
-footer .fa-facebook-f {
-  background:var(--green-footer);
+footer .fa-brands,
+footer .fa {
+  background: var(--green-footer);
   color: white;
 }
 
