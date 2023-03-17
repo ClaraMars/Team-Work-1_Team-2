@@ -53,23 +53,23 @@ header div.header-text {
   padding: 3em 3em;
   flex-flow: wrap;
   align-items: center;
+  margin: 2em 2em;
 }
 /* header "red" CODE title span */
 header span {
   color: var(--red);
-  font-style: italic;
-  font-weight: bold;
+  font-weight:900;
 }
 /*header title*/
 header h1 {
   font-family: "Quicksand";
   font-size: 3.5rem;
-  font-weight: normal;
+  font-weight: 400;
   font-style: italic;
 }
 /* div header-text first paragraph big*/
-header div.header-text p.big {
-  font-size: 1.4rem;
+header h3 {
+  font-size: 2rem;
   margin: 1em 0;
   font-weight: var(--font-weight);
   line-height: var(--line-height);
@@ -78,9 +78,15 @@ header div.header-text p.big {
 /* adjust the size of header and spotlight text */
 main div.spotlight-text p,
 header div.header-text p {
+  font-size: 1.4rem;
   font-weight: var(--font-weight);
   line-height: var(--line-height);
   margin-bottom: 2em;
+}
+/* strong header and spotlight weight */
+main div.spotlight-text p strong,
+header div.header-text p strong {
+  font-weight:500;
 }
 
 /*this give the color black to the header and spotlight links */
@@ -101,19 +107,19 @@ header p code {
 /* button for header and spotlight */
 main .button-spotlight button,
 header button {
-  padding: 1em 2em;
+  padding: 1.2em 2.8em;
   text-align: center;
   cursor: pointer;
   background-color: var(--white);
   color: black;
-  border: 0.1em solid var(--general-gray);
+  border: 0.2em solid var(--general-gray);
   border-radius: 2rem;
-  font-size: 0.785rem;
 }
 /* button hover */
 main .button-spotlight button:hover,
 header button:hover {
   border-color: var(--light-blue);
+  color: var(--light-blue);
 }
 
 /* header image img */
@@ -130,16 +136,17 @@ header div.header-image img {
 /* Spotlight */
 main section.spotlight h2 {
   font-size: 2.5rem;
-  font-weight: normal;
+  font-weight:300;
   margin-bottom: 0.8em;
 }
 
 /* spotlight settings images  */
 main div.spotlight2-image img,
 main div.spotlight-image img {
+  display: flex;
   float: left;
-  width: 35vw;
-  height: 45vh;
+  max-width: 50vw;
+  height: 50vh;
   object-fit: cover;
   object-position: 25%;
 }
@@ -165,24 +172,21 @@ footer.footer-nav {
 footer .fa-brands,
 footer .fa {
   padding: 1em;
-  font-size: 2em;
+  font-size: 1.8rem;
   width: 3em;
   margin: 0 0.3em;
   text-decoration: none;
   border-radius: 50%;
+  background: var(--green-footer);
+  color: white;
 }
 /* hover efect with mouse on top */
 footer .fa-brands:hover,
 footer .fa:hover {
   background: var(--white);
   color: var(--light-blue);
-}
+  border: 0.1em solid var(--light-blue);
 
-/* set the icon color */
-footer .fa-brands,
-footer .fa {
-  background: var(--green-footer);
-  color: white;
 }
 
 /* copyright heart icon color */
