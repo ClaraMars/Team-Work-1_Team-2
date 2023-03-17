@@ -177,7 +177,7 @@ footer .fa {
 footer .fa-brands:hover,
 footer .fa:hover {
     background:var(--white);
-    color:var(--green-footer);
+    color:var( --light-blue);
 }
 
 /* set the icon color */
