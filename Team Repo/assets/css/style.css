@@ -35,9 +35,7 @@ header {
   height: 100vh;
 }
 /* fit the content inside the header and spotlight sections  */
-main section.spotlight3,
-main section.spotlight2,
-main section.spotlight1,
+main div.spotlight-section,
 header .header {
   display: flex;
   align-items: center;
@@ -49,9 +47,7 @@ header .header {
 }
 
 /*div header-text and spotlight text */
-main div.spotlight3-text,
-main div.spotlight2-text,
-main div.spotlight1-text,
+main div.spotlight-text,
 header div.header-text {
   display: flex;
   padding: 3em 3em;
@@ -80,9 +76,7 @@ header div.header-text p.big {
 }
 
 /* adjust the size of header and spotlight text */
-main div.spotlight3-text p,
-main div.spotlight2-text p,
-main div.spotlight1-text p,
+main div.spotlight-text p,
 header div.header-text p {
   font-weight: var(--font-weight);
   line-height: var(--line-height);
@@ -90,17 +84,13 @@ header div.header-text p {
 }
 
 /*this give the color black to the header and spotlight links */
-main div.spotlight3-text a,
-main div.spotlight2-text a,
-main div.spotlight1-text a,
+main div.spotlight-text a,
 header a {
   color: black;
 }
 
 /* color code for header and spotlight */
-main section.spotlight3 p code,
-main section.spotlight2 p code,
-main section.spotlight1 p code,
+main section.spotlight p code,
 header p code {
   font-family: "Courier New", Courier, monospace;
   background-color: var(--background-gray);
@@ -109,9 +99,7 @@ header p code {
 }
 
 /* button for header and spotlight */
-main .button-spotlight3 button,
-main .button-spotlight2 button,
-main .button-spotlight1 button,
+main .button-spotlight button,
 header button {
   padding: 1em 2em;
   text-align: center;
@@ -123,9 +111,7 @@ header button {
   font-size: 0.785rem;
 }
 /* button hover */
-main .button-spotlight3 button:hover,
-main .button-spotlight2 button:hover,
-main .button-spotlight1 button:hover,
+main .button-spotlight button:hover,
 header button:hover {
   border-color:var( --light-blue);
 }
@@ -143,18 +129,15 @@ header div.header-image img {
 
 /* --------------------------------- */
 /* Spotlight */
-main section.spotlight3 h2,
-main section.spotlight2 h2,
-main section.spotlight1 h2 {
+main section.spotlight h2 {
   font-size: 2.5rem;
   font-weight: normal;
   margin-bottom: 0.8em;
 }
 
 /* spotlight settings images  */
-main div.spotlight3-image img,
-main div.spotlight2-image img,
-main div.spotlight1-image img {
+main div.spotlight2-image img, 
+main div.spotlight-image img {
   float: left;
   width: 35vw;
   height: 45vh;
