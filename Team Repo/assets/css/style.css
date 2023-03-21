@@ -56,6 +56,7 @@ main div.section p code{
     padding: .2em .3em;
     margin: 0 .2em;
     border-radius: .4rem;
+    font-weight: lighter!important;
 }
 
 main div.section p a{
@@ -68,13 +69,53 @@ main div.gallery{
     overflow-x: scroll;
 }
 
-main div.gallery img{
-    margin: 0 -.1em;
+main div.gallery div.images div img{
+    margin-right: -.1em;
 }
 
-/* main div.gallery div:hover{
+/* Gallery Hover */
+
+main div div.gallery div.images {
+    position: relative;
+}
+
+main div div.gallery div.images div.galleryHover{
+    position: absolute;
+    top: 0;
+    opacity: 0;
     background-color: rgba(0, 0, 0, .5);
-} */
+    color: var(--white);
+    padding: 4.35em 4em;
+    text-align: center;
+    margin-right: -.1em;
+}
+
+main div div.gallery div.images div.galleryHover h3{
+    font-size: 1.5rem;
+    font-weight: var(--font-weight);
+    margin-bottom: 1em;
+}
+
+main div div.gallery div.images div.galleryHover p{
+    font-size: 1rem;
+    font-weight: var(--font-weight);
+    margin-bottom: 1em;
+}
+
+main div div.gallery div.images div.galleryHover button{
+    color: var(--white);
+    font-size: .6rem;
+    font-weight: var(--font-weight);
+    padding: 1.3em 2.5em;
+    margin: 1.2em;
+    background-color: transparent;
+    border: 2px solid var(--white);
+    border-radius: 5rem;
+}
+
+main div div.gallery div.images:hover div.galleryHover{
+    opacity: 1;
+}
 
 /* Items */
 
@@ -135,35 +176,36 @@ main div.big-section{
     border-top: 1.5px solid var(--border-section-gray);
 }
 
-main div.big-section div.section div.additionalElements{
-    margin: 3em;
-    padding: 4em 0;
+main div.big-section div.section div.subSection{
+    margin: 4em;
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1.15fr 3fr;
     justify-items: left;
     border-bottom: 1.5px solid var(--general-gray);
 }
 
-main div.big-section div.section div.additionalElements h3{
-    font-size: 2rem;
+main div.big-section div.section div.subSection h3{
+    font-size: 2.5rem;
     font-weight: var(--font-weight);
 }
 
-main div.big-section div.section div.additionalElements div{
+main div.big-section div.section div.subSection div.text{
     font-size: 1.4rem;
     font-weight: var(--font-weight);
     line-height: var(--line-height);
+    text-align: center;
+    padding-bottom: 4em;
 }
 
-main div.big-section div.section div.additionalElements div span#bold{
+main div.big-section div.section div.subSection div span#bold{
     font-weight: bold;
 }
 
-main div.big-section div.section div.additionalElements div span#italic{
+main div.big-section div.section div.subSection div span#italic{
     font-style: italic;
 }
 
-main div.big-section div.section div.additionalElements div code{
+main div.big-section div.section div.subSection div code{
     font-family: 'Courier New', Courier, monospace;
     background-color: var(--background-gray);
     padding: .2em .3em;
@@ -171,6 +213,69 @@ main div.big-section div.section div.additionalElements div code{
     border-radius: .4rem;
 }
 
-main div.big-section div.section div.additionalElements div a{
+main div.big-section div.section div.subSection div a{
     color: var(--black);
 }
+
+/* Form */
+
+/* main div.big-section div.section div.subSection{
+    display: grid;
+    grid-template-columns: 1.15fr 3fr;
+} */
+
+main div.big-section div.section div.subSection div.form{
+    font-size: 1.4rem;
+    font-weight: var(--font-weight);
+    line-height: var(--line-height);
+    text-align: left;
+}
+
+main div.big-section div.section div.subSection div.form label{
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+main div.big-section div.section div.subSection div.form div.input{
+    display: flex;
+    flex-direction: row;
+    justify-items: space-between;
+}
+
+main div.big-section div.section div.subSection div.form div.input div input{
+    border: 1px solid var(--general-gray);
+    border-radius: .4rem;
+    margin: 1em 0 2em;
+    padding: 1.1em 8em;
+}
+
+main div.big-section div.section div.subSection div.form div.input div label div#name{
+    margin-right: 1.7em;
+}
+
+main div.big-section div.section div.subSection div.form div.select div{
+    border: 1px solid var(--general-gray);
+    border-radius: .4rem;
+    margin: 1em 2em 1.5em 0;
+    padding: .4em 1em;
+    width: 100%;
+}
+
+main div.big-section div.section div.subSection div.form div.select div select{
+    width: 100%;
+}
+
+main div.big-section div.section div.subSection div.form div.select div select option{
+    /* font-size: 1.4rem;
+    font-weight: var(--font-weight); */
+    font-size: 1.4rem;
+    font-weight: var(--font-weight);
+    -webkit-font-weight: var(--font-weight);
+}
+
+
+main div.big-section div.section div.subSection div.form textarea{
+    border: 1px solid var(--general-gray);
+    border-radius: .4rem;
+}
+
