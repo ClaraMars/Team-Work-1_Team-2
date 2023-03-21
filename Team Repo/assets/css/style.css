@@ -178,6 +178,7 @@ footer .fa {
   text-decoration: none;
   border-radius: 50%;
   background: var(--green-footer);
+  border: 0.1em solid var(--green-footer);
   color: white;
 }
 /* hover efect with mouse on top */
