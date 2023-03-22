@@ -362,5 +362,5 @@ main div.big-section div.section section.cita div.quote blockquote {
   line-height: 162%;
   border-left: 6px solid rgb(209, 203, 203); /* Este es el gris del blockquote que es diferente */
   font-style: italic;
-  padding: 0.48em 0em 0.5em 1em;
+  padding: 0.48em 0em 0.5em 2em;
 }
