@@ -27,168 +27,204 @@
   --red: rgb(223, 54, 54); /*Giselle*/
   --light-blue: rgb(71, 211, 228); /*Juanma*/
   --green-footer: #7aa194; /*Giselle*/
+  --dark-green-footer: #628076;
   --blue-footer: #504651; /*Giselle*/
+  --header-shadow: #859396;
+  --spotlight-shadow: #DBDCDB;
 }
 /* Header */
 header {
   width: 100vw;
   height: 100vh;
 }
+
 /* fit the content inside the header and spotlight sections  */
-main div.spotlight-section,
-header .header {
+header section.header,
+main section.spotlight div.spotlight-section{
   display: flex;
+  flex-direction: row;
   align-items: center;
-  justify-content: space-between;
-  color: var(--black);
   border-bottom: 1px solid var(--border-section-gray);
-  width: 100%;
-  height: auto;
 }
 
 /*div header-text and spotlight text */
-main div.spotlight-text,
-header div.header-text {
-  display: flex;
+header section.header div.header-text,
+main section.spotlight div.spotlight-section div.spotlight-text{
   padding: 3em 3em;
-  flex-flow: wrap;
-  align-items: center;
   margin: 2em 2em;
 }
-/* header "red" CODE title span */
-header span {
-  color: var(--red);
-  font-weight:900;
-}
+
 /*header title*/
-header h1 {
-  font-family: "Quicksand";
-  font-size: 3.5rem;
-  font-weight: 400;
+header section.header div.header-text h1 {
+  font-family: 'Darker Grotesque', sans-serif;
+  font-size: 5.5rem;
+  font-weight: 300;
   font-style: italic;
+  letter-spacing: .1rem;
 }
+
+header section.header div.header-text h1 i{
+  font-size: 5rem;
+}
+
+/* header "red" CODE title span */
+header section.header div.header-text h1 span {
+  font-family: "Assistant", sans-serif;
+  font-size: 5rem;
+  color: var(--red);
+  font-weight:600;
+  letter-spacing: -.4rem;
+}
+
 /* div header-text first paragraph big*/
-header h3 {
-  font-size: 2rem;
-  margin: 1em 0;
+header section.header div.header-text h3 {
+  font-size: 1.8rem;
+  margin: .8em 0 1.8em;
   font-weight: var(--font-weight);
-  line-height: var(--line-height);
+  line-height: 1.5em;
 }
 
 /* adjust the size of header and spotlight text */
-main div.spotlight-text p,
-header div.header-text p {
+
+header section.header div.header-text p,
+main section.spotlight div.spotlight-section div.spotlight-text p{
   font-size: 1.4rem;
   font-weight: var(--font-weight);
   line-height: var(--line-height);
   margin-bottom: 2em;
 }
+
 /* strong header and spotlight weight */
-main div.spotlight-text p strong,
-header div.header-text p strong {
+header section.header div.header-text p strong,
+main section.spotlight div.spotlight-section div.spotlight-text p strong{
   font-weight:500;
 }
 
 /*this give the color black to the header and spotlight links */
-main div.spotlight-text a,
-header a {
+header section.header div.header-text a,
+main section.spotlight div.spotlight-section div.spotlight-text a{
   color: black;
+}
+
+/*links hover*/
+header section.header div.header-text a:hover,
+main section.spotlight div.spotlight-section div.spotlight-text a:hover{
+  color: var(--light-blue);
+  text-decoration: none;
 }
 
 /* color code for header and spotlight */
-main section.spotlight p code,
-header p code {
+header section.header div.header-text p code,
+main section.spotlight div.spotlight-section div.spotlight-text p code{
   font-family: "Courier New", Courier, monospace;
   background-color: var(--background-gray);
-  padding: 0.2em 0.3em;
-  margin: 0 0.2em;
+  padding: .2em .3em;
+  margin: 0 .2em;
+  border-radius: .4rem;
 }
 
 /* button for header and spotlight */
-main .button-spotlight button,
-header button {
-  padding: 1.2em 2.8em;
+header section.header div.header-text div.button-header button,
+main section.spotlight div.spotlight-section div.spotlight-text div.button-spotlight button{
+  font-family: "Assistant", sans-serif;
+  background-color: var(--white);
+  border: 1.4px solid var(--general-gray);
+  border-radius: 2rem;
+  letter-spacing: .1em; 
+  padding: 1.1em 3em;
   text-align: center;
   cursor: pointer;
-  background-color: var(--white);
-  color: black;
-  border: 0.2em solid var(--general-gray);
-  border-radius: 2rem;
 }
 /* button hover */
-main .button-spotlight button:hover,
-header button:hover {
+header section.header div.header-text div.button-header button:hover,
+main section.spotlight div.spotlight-section div.spotlight-text div.button-spotlight button:hover{
   border-color: var(--light-blue);
   color: var(--light-blue);
 }
 
 /* header image img */
-header div.header-image img {
-  display: flex;
-  float: right;
+
+header section.header div.header-image img {
   width: 50vw;
   height: 100vh;
   object-fit: cover;
-  object-position: 50%;
+  box-shadow: -.1px 0 5px 0 var(--header-shadow);
+  margin-bottom: -.3em;
 }
 
 /* --------------------------------- */
+
 /* Spotlight */
-main section.spotlight h2 {
+main section.spotlight div.spotlight-section div.spotlight-text h2 {
   font-size: 2.5rem;
-  font-weight:300;
+  font-weight: var(--font-weight);
+  letter-spacing: -.1rem;
   margin-bottom: 0.8em;
 }
 
 /* spotlight settings images  */
-main div.spotlight2-image img,
-main div.spotlight-image img {
-  display: flex;
-  float: left;
-  max-width: 50vw;
-  height: 50vh;
+
+main section.spotlight div.spotlight-section div.spotlight-image img,
+main section.spotlight div.spotlight-section div.spotlight2-image img{
+  max-width: 40vw;
+  height: 40vh;
   object-fit: cover;
-  object-position: 25%;
+  box-shadow: 0 .2px 6px 0 var(--spotlight-shadow);
+  margin-bottom: -.3em;
 }
 
 /*set spotlight2 images position  */
 main div.spotlight2-image img {
-  float: right;
+  box-shadow: -.2px 0 6px 0 var(--spotlight-shadow);
 }
 
 /* ------------------------------------ */
 
 /* footer */
-footer.footer-nav {
+footer{
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: var(--blue-footer);
-  padding: 5rem;
+  padding: 6em;
   width: 100%;
   text-align: center !important;
 }
-/* social-icon to ajuste the icon size */
-footer .fa-brands,
-footer .fa {
-  padding: 1em;
-  font-size: 1.8rem;
-  width: 3em;
-  margin: 0 0.3em;
-  text-decoration: none;
-  border-radius: 50%;
-  background: var(--green-footer);
-  border: 0.1em solid var(--green-footer);
-  color: white;
-}
-/* hover efect with mouse on top */
-footer .fa-brands:hover,
-footer .fa:hover {
-  background: var(--white);
-  color: var(--light-blue);
-  border: 0.1em solid var(--light-blue);
 
+/* social-icon to ajuste the icon size */
+footer div.footer-content div.footer-nav-social{
+  display: flex;
+  flex-direction: row;
 }
+
+footer div.footer-content div.footer-nav-social div.footer-icons{
+  background-color: var(--green-footer);
+  width: 5em;
+  height: 5em;
+  margin: .8em;
+  border: 1px solid var(--dark-green-footer);
+  border-radius: 50%;
+}
+
+footer div.footer-content div.footer-nav-social div.footer-icons a.fa-brands,
+footer div.footer-content div.footer-nav-social div.footer-icons a.fa {
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: white;
+  padding: .9em;
+}
+
+/* hover efect with mouse on top */
+footer div.footer-content div.footer-nav-social div.footer-icons:hover{
+  background: var(--white);
+  border: 1px solid var(--light-blue);
+}
+
+footer div.footer-content div.footer-nav-social div.footer-icons a.fa-brands:hover,
+footer div.footer-content div.footer-nav-social div.footer-icons a.fa:hover{
+  color: var(--light-blue); 
+}
+
 
 /* copyright heart icon color */
 footer .copyright h4 i {
@@ -197,13 +233,19 @@ footer .copyright h4 i {
 
 /* copyright text settings*/
 footer .copyright h4 {
+  font-size: 1.8rem;
+  font-weight: 300;
   color: var(--general-gray);
-  font-size: 1.4rem;
-  margin-top: 2em;
+  margin: 2em 0 1em;
 }
 
 /* copyright CODE SPACE link */
 footer .codespace {
   color: var(--green-footer);
+  font-weight: bold;
+}
+
+footer .codespace:hover {
+  color: var(--light-blue);
   text-decoration: none;
 }
