@@ -1,56 +1,110 @@
-*{
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: none;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  box-sizing: border-box;
 }
 
-:root{
-    /* General letter */
-    font-family: 'Assistant', sans-serif;
-    font-size: .785rem;
-    color: black;
-    
-    --font-weight: 200;
-    --line-height: 1.7em;
+:root {
+  /* General letter */
+  font-family: "Assistant", sans-serif;
+  font-size: 0.785rem;
+  color: black;
 
-    /* Gray scale */
-    --white: #FFF;
-    --background-gray: #F2F2F2; /* Text backgrounds, border default button (Juanma) and dark gray in table (item 1, 3, 5) */
-    --border-section-gray: #ECECEC; /*Border big sections (Spotligh, Gallery and Additional Elements */
-    --general-gray: #CCC; /* Border buttons, border small sections, border icons, items grid, text in default button (Juanma), form borders, table borders and border box */
-    --button-gray: #C0C0C0; /* Juanma background Primary button */
-    --black: #000;
+  --font-weight: 200;
+  --line-height: 1.7em;
 
-    /* Other colors */
-    --red: rgb(223, 54, 54); /*Giselle*/
-    --light-blue: rgb(71, 211, 228); /*Juanma*/
-    --green-footer: #7AA194; /*Giselle*/
-    --blue-footer: #504651; /*Giselle*/
-}
-*{
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: none;
-    box-sizing: border-box;
-    list-style: none;
+  /* Gray scale */
+  --white: #fff;
+  --background-gray: #f2f2f2; /* Text backgrounds, border default button (Juanma) and dark gray in table (item 1, 3, 5) */
+  --border-section-gray: #ececec; /*Border big sections (Spotligh, Gallery and Additional Elements */
+  --general-gray: #ccc; /* Border buttons, border small sections, border icons, items grid, text in default button (Juanma), form borders, table borders and border box */
+  --button-gray: #c0c0c0; /* Juanma background Primary button */
+  --black: #000;
+
+  /* Other colors */
+  --red: rgb(223, 54, 54); /*Giselle*/
+  --light-blue: rgb(71, 211, 228); /*Juanma*/
+  --green-footer: #7aa194; /*Giselle*/
+  --blue-footer: #504651; /*Giselle*/
 }
 
-:root{
-    font-size: .785rem;
-    --blue: #0d6efd;
-    --indigo: #6610f2;
-    --purple: #6f42c1;
-    --pink: #d63384;
-    --red: #dc3545;
-    --orange: #fd7e14;
-    --yellow: #ffc107;
-    --green: #198754;
-    --teal: #20c997;
-    --cyan: #0dcaf0;
-    --white: #fff;
-    --gray: #adb5bd;
+/* main div.section{
+  width: 75%;
+  margin: auto;
 }
- 
+
+main div.big-section{
+  margin-top: 5em;
+  border-top: 1.5px solid var(--border-section-gray);
+}
+
+main div.big-section div.section div.subSection{
+  margin: 3em;
+  display: grid;
+  grid-template-columns: 1.15fr 3fr;
+  justify-items: left;
+  border-bottom: 1.5px solid var(--general-gray);
+}
+
+main div.big-section div.section div.subSection h3{
+  font-size: 2.5rem;
+  font-weight: var(--font-weight);
+} */
+
+#main {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.section {
+  border-top: 1.5px solid var(--border-section-gray);
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+}
+
+.sectionTitle {
+  flex: 0.3;
+}
+
+.sectionContent {
+  flex: 0.7;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table:not(:last-of-type) {
+  margin-bottom: 50px;
+}
+
+.table caption {
+  text-align: left;
+}
+
+.table th, .table td {
+  padding: 6px;
+  text-align: left;
+}
+
+.table tr {
+  height: 40px;
+}
+
+.table tbody tr {
+  border-top: 1px solid var(--border-section-gray);
+}
+
+.table.alternate tbody td {
+  border: 3px solid var(--border-section-gray);
+}
+
+.table tbody tr:nth-of-type(odd) {
+  border-top: 1px solid var(--border-section-gray);
+  background-color: var(--background-gray);
+}
+
