@@ -8,7 +8,7 @@
 
 :root {
   /* General letter */
-  font-family: "Assistant", sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 0.785rem;
   color: black;
 
@@ -29,9 +29,428 @@
   --green-footer: #7aa194; /*Giselle*/
   --blue-footer: #504651; /*Giselle*/
 }
-.box1 {
-  width: 50%;
-  height: 50%;
+
+main div.big-section {
+  margin-top: 5em;
+}
+
+main div.big-section div.section {
+  width: 75%;
+  margin: auto;
+}
+
+main div.big-section div.section div.subSection {
+  margin: 4em;
+  display: grid;
+  grid-template-columns: 1.15fr 3fr;
+  justify-items: left;
+  border-bottom: 1.5px solid var(--general-gray);
+}
+
+main div.big-section div.section div.subSection h3 {
+  font-size: 2.5rem;
+  font-weight: var(--font-weight);
+  margin-left: 0.5em;
+}
+
+/* Code */
+
+main div.big-section div.section div.subSection div.code {
+  width: 100%;
+}
+
+main div.big-section div.section div.subSection pre.formula {
+  font-size: 1.4rem;
+  background-color: #f2f2f2;
+  border-radius: 0.4rem;
+  margin-bottom: 4em;
+  margin-left: -1em;
+  font-family: "Courier New", Courier, monospace;
+}
+
+/* Icons */
+
+.estilo {
+  padding-bottom: 1.2em;
+  padding-top: .4em;
+  font-size: 1.7rem;
+  color: grey;
+  margin-left: -.5em;
+}
+.circle {
+  width: 55px;
+  height: 55px;
+  border: 1.5px solid #ccc;
+  border-radius: 50%; 
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 19px;
+}
+
+.circle i:hover{
+  color: var(--light-blue);
+}
+
+.circle:hover{
+  border-color: var(--light-blue);
+}
+
+main div.big-section div.section div.subSection .circle i {
+  font-size: 21px;
+  padding: 1em;
+}
+.iconsimple-container {
+  display: flex;
+  flex-direction: row;
+  width: 4em;
+  padding-bottom: 1.9em;
+}
+.iconcircle-container {
+  display: flex;
+  flex-direction: row;
+  margin-left: -1.1em;
+}
+.simple {
+  font-size: 20px;
+  margin-right: 0.5px;
+  margin-left: 0.1px;
+  padding-right: 1.9em;
+  width: 1.5em;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.simple i:hover{
+  color: var(--light-blue);
+}
+
+.icons {
+  padding-bottom: 3em;
+}
+
+/* Buttons */
+
+main div.big-section div.section div.subSection div.pruebaflex div.buttons button{
+  font-family: 'Source Sans Pro', sans-serif;
+  letter-spacing: .1rem;
+  font-size: 1.1rem;
+}
+
+div.buttons .button11:hover,
+div.buttons .button21:hover,
+div.buttons .button31:hover,
+div.buttons .button33:hover,
+div.buttons .button41:hover,
+div.buttons .button43:hover,
+div.buttons .button51:hover{
+  background-color: var(--light-blue);
+  border-color: var(--light-blue);
+}
+
+div.buttons .button12:hover,
+div.buttons .button22:hover,
+div.buttons .button32:hover,
+div.buttons .button34:hover,
+div.buttons .button42:hover,
+div.buttons .button44:hover,
+div.buttons .button52:hover{
+  color: var(--light-blue);
+  border-color: var(--light-blue);
+}
+
+.file1,
+.file2,
+.file3,
+.file4,
+.file5,
+.file6 {
+  padding: 0.4em;
+  margin-bottom: 3.5em;
+  margin-left: -19em;
+}
+
+.fila2{
+  position: relative;
+}
+
+.pruebaflex {
+  display: flex;
+  margin-left: 17em;
+}
+.button11,
+.button51 {
+  margin-right: 1.7em;
+  justify-content: center;
+  text-align: center;
+  width: 155px;
+  height: 60px;
+  border-radius: 4rem;
+  border: 1px solid var(--black);
+  background-color: #000;
+  color: white;
+}
+.fa-solid {
+  padding-right: 0.5em;
+}
+
+.button12,
+.button52 {
+  justify-content: center;
+  text-align: center;
+  width: 155px;
+  height: 60px;
+  border-radius: 4rem;
+  border: 1px solid var(--button-gray);
+  background-color: white;
   color: black;
-  opacity: 0.2;
+}
+.button21 {
+  margin-right: 1.7em;
+  width: 165px;
+  height: 60px;
+  border: 1px solid var(--black);
+  border-radius: 4rem;
+  background-color: #000;
+  color: white;
+}
+.button22 {
+  margin-right: 1.7em;
+
+  width: 145px;
+  height: 50px;
+  border: 1px solid var(--button-gray);
+  border-radius: 4rem;
+  background-color: white;
+  color: var(--black);
+  position: absolute;
+}
+.button23 {
+  margin-right: 1em;
+  /* justify-content: center; */
+  /* text-align: center; */
+  width: 85px;
+  height: 40px;
+  border: 1px solid rgb(71, 211, 228);
+  border-top: 1px solid var(--button-gray);
+  border-radius: 4rem;
+  background-color: white;
+  color: rgb(71, 211, 228);
+  position: absolute;
+  left: 72em;
+}
+.button31 {
+  margin-right: 1.7em;
+
+  width: 205px;
+  height: 60px;
+  border: 1px solid var(--black);
+  border-radius: 4rem;
+  background-color: var(--black);
+  color: white;
+}
+.button32 {
+  margin-right: 1.7em;
+
+  width: 205px;
+  height: 60px;
+  border: 1px solid var(--button-gray);
+  border-radius: 4rem;
+  background-color: white;
+  color: var(--black);
+}
+.button33 {
+  margin-right: 1.7em;
+
+  width: 205px;
+  height: 60px;
+  border: 1px solid var(--black);
+  border-radius: 4rem;
+  background-color: var(--black);
+  color: white;
+}
+.button34 {
+  margin-right: 1.7em;
+
+  width: 205px;
+  height: 60px;
+  border: 1px solid var(--button-gray);
+  border-radius: 4rem;
+  background-color: white;
+  color: var(--black);
+}
+.button41 {
+  margin-right: 1.7em;
+
+  width: 205px;
+  height: 45px;
+  border: 1px solid var(--black);
+  border-radius: 4rem;
+  background-color: var(--black);
+  color: white;
+}
+.button42 {
+  margin-right: 1.7em;
+
+  width: 205px;
+  height: 45px;
+  border: 1px solid var(--button-gray);
+  border-radius: 4rem;
+  background-color: white;
+  color: var(--black);
+}
+.button43 {
+  margin-right: 1.7em;
+
+  width: 205px;
+  height: 45px;
+  border: 1px solid var(--black);
+  border-radius: 4rem;
+  background-color: var(--black);
+  color: white;
+}
+.button44 {
+  margin-right: 1.7em;
+
+  width: 205px;
+  height: 45px;
+  border: 1px solid var(--button-gray);
+  border-radius: 4rem;
+  background-color: white;
+  color: var(--black);
+}
+.button61 {
+  margin-right: 1.7em;
+
+  width: 155px;
+  height: 60px;
+  border: 1px solid var(--button-gray);
+  border-radius: 4rem;
+  background-color: var(--button-gray);
+  color: white;
+}
+.button62 {
+  margin-right: 1.7em;
+
+  width: 155px;
+  height: 60px;
+  border: 1px solid var(--background-gray);
+  border-radius: 4rem;
+  background-color: white;
+  color: var(--general-gray);
+}
+
+/* Actions */
+
+main div.big-section div.section div.subSection div.actions p{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.8rem;
+  font-weight: var(--font-weight);
+}
+
+main div.big-section div.section div.subSection div.actions button{
+  font-family: 'Source Sans Pro', sans-serif;
+  letter-spacing: .1rem;
+  font-size: 1.1rem;
+}
+
+.tittleactions{
+  font-size: 1.5rem;
+  margin-left: -.4em;
+}
+.actionDefault1 {
+  margin: 1.5em 1em 3em 0;
+  justify-content: center;
+  text-align: center;
+  width: 140px;
+  height: 55px;
+  border: 1px solid var(--black);
+  border-radius: 4rem;
+  background-color: #000;
+  color: white;
+}
+.actionDefaul2 {
+  margin: 1.5em 1em 3em 0;
+  justify-content: center;
+  text-align: center;
+  width: 140px;
+  height: 55px;
+  border: 1px solid var(--button-gray);
+  border-radius: 4rem;
+  background-color: white;
+  color: black;
+}
+.actionSmall1 {
+  margin: 1.5em 1em 3em 0;
+  justify-content: center;
+  text-align: center;
+  width: 100px;
+  height: 40px;
+  border: 1px solid var(--black);
+  border-radius: 4rem;
+  background-color: #000;
+  color: white;
+}
+.actionSmall2 {
+  margin: 1.5em 1em 3em 0;
+  justify-content: center;
+  text-align: center;
+  width: 100px;
+  height: 40px;
+  border: 1px solid var(--button-gray);
+  border-radius: 4rem;
+  background-color: white;
+  color: black;
+}
+.actionsStacked,
+.actionsStackedFit {
+  display: flex;
+  flex-direction: column;
+}
+.actionStacked1 {
+  margin: 1.5em 1em 1.5em 0;
+  justify-content: center;
+  text-align: center;
+  width: 140px;
+  height: 55px;
+  border: 1px solid var(--black);
+  border-radius: 4rem;
+  background-color: #000;
+  color: white;
+}
+.actionStacked2 {
+  margin: 1.5em 1em 1.5em 0;
+  justify-content: center;
+  text-align: center;
+  width: 140px;
+  height: 55px;
+  border: 1px solid var(--button-gray);
+  border-radius: 4rem;
+  background-color: white;
+  color: black;
+}
+.actionStackedFit1 {
+  margin: 1.5em 1em 1.5em 0;
+  justify-content: center;
+  text-align: center;
+  width: 400px;
+  height: 50px;
+  border: 1px solid var(--black);
+  border-radius: 4rem;
+  background-color: #000;
+  color: white;
+}
+.actionStackedFit2 {
+  margin: 1.5em 1em 5em 0;
+  justify-content: center;
+  text-align: center;
+  width: 400px;
+  height: 50px;
+  border: 1px solid var(--button-gray);
+  border-radius: 4rem;
+  background-color: white;
+  color: black;
 }
