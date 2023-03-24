@@ -33,45 +33,34 @@
   --spotlight-shadow: #DBDCDB;
 }
 
-img {
+img{
   width: 100%;
   height: auto;
   display: block;
 }
 
 /* Header */
-header {
+header{
   width: 100vw;
   height: 100vh;
-  font-size: 1.8rem;
   display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-header > div {
-  width: 50%;
-  height: 100%;
-}
-
-/* fit the content inside the header and spotlight sections  */
-header section.header,
-main section.spotlight div.spotlight-section{
-  display: flex;
-  flex-direction: row;
   align-items: center;
   border-bottom: 1px solid var(--border-section-gray);
 }
 
-/*div header-text and spotlight text */
-header section.header div.header-text,
-main section.spotlight div.spotlight-section div.spotlight-text{
-  padding: 3em 3em;
-  margin: 2em 2em;
+header > div{
+  width: 50%;
+  height: 100%;
 }
 
-/*header title*/
-header section.header div.header-text h1 {
+/* HEADER-TEXT */
+
+header div.header-text{
+  padding: 10em 5em;
+}
+
+/*Header title*/
+header h1{
   font-family: 'Darker Grotesque', sans-serif;
   font-size: 5.5rem;
   font-weight: 300;
@@ -79,13 +68,13 @@ header section.header div.header-text h1 {
   letter-spacing: .1rem;
 }
 
-header section.header div.header-text h1 i{
+header h1 i{
   font-size: 5rem;
 }
 
 /* header "red" CODE title span */
-header section.header div.header-text h1 span {
-  font-family: "Assistant", sans-serif;
+header h1 span{
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 5rem;
   color: var(--red);
   font-weight:600;
@@ -93,8 +82,8 @@ header section.header div.header-text h1 span {
 }
 
 /* div header-text first paragraph big*/
-header section.header div.header-text h3 {
-  font-size: 1.8rem;
+header h3{
+  font-size: 1.7rem;
   margin: .8em 0 1.8em;
   font-weight: var(--font-weight);
   line-height: 1.5em;
@@ -102,36 +91,36 @@ header section.header div.header-text h3 {
 
 /* adjust the size of header and spotlight text */
 
-header section.header div.header-text p,
+header p,
 main section.spotlight div.spotlight-section div.spotlight-text p{
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   font-weight: var(--font-weight);
   line-height: var(--line-height);
   margin-bottom: 2em;
 }
 
 /* strong header and spotlight weight */
-header section.header div.header-text p strong,
-main section.spotlight div.spotlight-section div.spotlight-text p strong{
-  font-weight:500;
+header p strong,
+main section.spotlight p strong{
+  font-weight: 500;
 }
 
 /*this give the color black to the header and spotlight links */
-header section.header div.header-text a,
-main section.spotlight div.spotlight-section div.spotlight-text a{
+header a,
+main section.spotlight a{
   color: black;
 }
 
 /*links hover*/
-header section.header div.header-text a:hover,
-main section.spotlight div.spotlight-section div.spotlight-text a:hover{
+header a:hover,
+main section.spotlight a:hover{
   color: var(--light-blue);
   text-decoration: none;
 }
 
 /* color code for header and spotlight */
-header section.header div.header-text p code,
-main section.spotlight div.spotlight-section div.spotlight-text p code{
+header p code,
+main section.spotlight p code{
   font-family: "Courier New", Courier, monospace;
   background-color: var(--background-gray);
   padding: .2em .3em;
@@ -140,8 +129,8 @@ main section.spotlight div.spotlight-section div.spotlight-text p code{
 }
 
 /* button for header and spotlight */
-header section.header div.header-text div.button-header button,
-main section.spotlight div.spotlight-section div.spotlight-text div.button-spotlight button{
+header div.button-header button,
+main section.spotlight div.button-spotlight button{
   font-family: "Assistant", sans-serif;
   background-color: var(--white);
   border: 1.4px solid var(--general-gray);
@@ -152,47 +141,65 @@ main section.spotlight div.spotlight-section div.spotlight-text div.button-spotl
   cursor: pointer;
 }
 /* button hover */
-header section.header div.header-text div.button-header button:hover,
-main section.spotlight div.spotlight-section div.spotlight-text div.button-spotlight button:hover{
+header div.button-header button:hover,
+main section.spotlight div.button-spotlight button:hover{
   border-color: var(--light-blue);
   color: var(--light-blue);
 }
 
-/* header image img */
+/* HEADER IMAGE */
 
-header section.header div.header-image img {
-  /* width: ; */
-  /* height: 100vh; */
-  /* object-fit: cover; */
+header div.header-image img{
+  height: inherit;
+  object-fit: cover;
   box-shadow: -.1px 0 5px 0 var(--header-shadow);
-  /* margin-bottom: -.3em; */
 }
 
-/* --------------------------------- */
+/* SPOTLIGHT SECTION */
 
-/* Spotlight */
-main section.spotlight div.spotlight-section div.spotlight-text h2 {
+main section.spotlight div.spotlight-section{
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--border-section-gray);
+  height: 365px;
+}
+
+/* spotlight settings images  */
+
+main section.spotlight div.spotlight-section div.spotlight-image{
+  width: 35%;
+  height: 100%;
+  align-self: stretch;
+}
+
+main section.spotlight div.spotlight-section div.spotlight-image img{
+  box-shadow: 0 .2px 6px 0 var(--spotlight-shadow);
+  width: 100%;
+  height: inherit;
+  object-fit: cover;
+}
+
+main div#spotlight-image2 img{
+  box-shadow: -.2px 0 6px 0 var(--spotlight-shadow);
+}
+
+/* spotlight text */
+
+main section.spotlight div.spotlight-section div.spotlight-text{
+  padding: 0em 4.7em;
+  width: 65%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+main section.spotlight div.spotlight-section div.spotlight-text h2{
   font-size: 2.5rem;
   font-weight: var(--font-weight);
   letter-spacing: -.1rem;
   margin-bottom: 0.8em;
 }
-
-/* spotlight settings images  */
-
-main section.spotlight div.spotlight-section div.spotlight-image ,
-main section.spotlight div.spotlight-section div.spotlight2-image{
-  max-width: 40vw;
-  /* height: 40vh; */
-  /* object-fit: cover; */
-  /* box-shadow: 0 .2px 6px 0 var(--spotlight-shadow);
-  margin-bottom: -.3em; */
-}
-
-/*set spotlight2 images position  */
-/* main div.spotlight2-image img {
-  box-shadow: -.2px 0 6px 0 var(--spotlight-shadow);
-} */
 
 /* ------------------------------------ */
 
@@ -202,8 +209,7 @@ footer{
   align-items: center;
   justify-content: center;
   background-color: var(--blue-footer);
-  padding: 6em;
-  width: 100%;
+  padding: 4.7em;
   text-align: center !important;
 }
 
@@ -215,19 +221,23 @@ footer div.footer-content div.footer-nav-social{
 
 footer div.footer-content div.footer-nav-social div.footer-icons{
   background-color: var(--green-footer);
-  width: 5em;
-  height: 5em;
-  margin: .8em;
+  width: 3.5em;
+  height: 3.5em;
+  margin-right: .8em;
   border: 1px solid var(--dark-green-footer);
   border-radius: 50%;
+  position: relative;
 }
 
 footer div.footer-content div.footer-nav-social div.footer-icons a.fa-brands,
 footer div.footer-content div.footer-nav-social div.footer-icons a.fa {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   text-decoration: none;
   color: white;
+  position: absolute;
   padding: .9em;
+  top: -.25em;
+  left: -.25em;
 }
 
 /* hover efect with mouse on top */
@@ -249,7 +259,7 @@ footer .copyright h4 i {
 
 /* copyright text settings*/
 footer .copyright h4 {
-  font-size: 1.8rem;
+  font-size: 1.3rem;
   font-weight: 300;
   color: var(--general-gray);
   margin: 2em 0 1em;
