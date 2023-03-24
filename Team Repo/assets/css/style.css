@@ -8,7 +8,7 @@
 
 :root{
     /* General letter */
-    font-family: 'Assistant', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     font-size: .785rem;
     color: black;
 
@@ -30,11 +30,12 @@
     --blue-footer: #504651; /*Giselle*/
 }
 
+
 /* Gallery */
 
 main div.section{
     text-align: center;
-    width: 75%;
+    width: 76%;
     margin: auto;
 }
 
@@ -45,7 +46,7 @@ main div.section h2{
 }
 
 main div.section p{
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     font-weight: var(--font-weight);
     line-height: var(--line-height);
 }
@@ -63,77 +64,84 @@ main div.section p a{
     color: var(--black);
 }
 
+main div.section p a:hover{
+  color: var(--light-blue);
+  text-decoration: none;
+}
+
 main div.gallery{
-    margin-top: 5em;
-    display: flex;
-    overflow-x: scroll;
+  margin-top: 5em;
+  display: flex;
+  overflow-x: scroll;
 }
 
 main div.gallery div.images div img{
-    margin-right: -.1em;
+  margin-right: -.1em;
 }
+
+
 
 /* Gallery Hover */
 
-main div div.gallery div.images {
-    position: relative;
+main div.gallery div.images {
+  position: relative;
 }
 
-main div div.gallery div.images div.galleryHover{
-    position: absolute;
-    top: 0;
-    opacity: 0;
-    background-color: rgba(0, 0, 0, .5);
-    color: var(--white);
-    padding: 4.35em 4em;
-    text-align: center;
-    margin-right: -.1em;
+main div.gallery div.images div.galleryHover{
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, .5);
+  color: var(--white);
+  padding: 4.35em 4em;
+  text-align: center;
+  margin-right: -.1em;
 }
 
-main div div.gallery div.images div.galleryHover h3{
-    font-size: 1.5rem;
-    font-weight: var(--font-weight);
-    margin-bottom: 1em;
+main div.gallery div.images div.galleryHover h3{
+  font-size: 1.5rem;
+  font-weight: var(--font-weight);
+  margin-bottom: 1em;
 }
 
-main div div.gallery div.images div.galleryHover p{
-    font-size: 1rem;
-    font-weight: var(--font-weight);
-    margin-bottom: 1em;
+main div.gallery div.images div.galleryHover p{
+  font-size: 1rem;
+  font-weight: var(--font-weight);
+  margin-bottom: 1em;
 }
 
-main div div.gallery div.images div.galleryHover button{
-    color: var(--white);
-    font-size: .6rem;
-    font-weight: var(--font-weight);
-    padding: 1.3em 2.5em;
-    margin: 1.2em;
-    background-color: transparent;
-    border: 2px solid var(--white);
-    border-radius: 5rem;
+main div.gallery div.images div.galleryHover button{
+  color: var(--white);
+  font-size: .6rem;
+  font-weight: var(--font-weight);
+  padding: 1.3em 2.5em;
+  margin: 1.2em;
+  background-color: transparent;
+  border: 2px solid var(--white);
+  border-radius: 5rem;
 }
 
-main div div.gallery div.images:hover div.galleryHover{
-    opacity: 1;
+main div.gallery div.images:hover div.galleryHover{
+  opacity: 1;
 }
 
 /* Items */
 
 main div.section div#items{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    margin-top: 4em;
-    margin-bottom: 7em;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  margin-top: 4em;
+  margin-bottom: 7em;
 }
 
 main div.section div#items div.card-items{
-    font-size: 1.4rem;
-    font-weight: var(--font-weight);
-    line-height: var(--line-height);
-    padding: 2.2em 2.6em ;
-    border-right: 1px solid var(--general-gray);
-    border-bottom: 1px solid var(--general-gray);
+  font-size: 1.3rem;
+  font-weight: var(--font-weight);
+  line-height: var(--line-height);
+  padding: 2.2em 2.8em ;
+  border-right: 1px solid var(--general-gray);
+  border-bottom: 1px solid var(--general-gray);
 }
 
 /* Quitar bordes laterales y bottom */
@@ -141,141 +149,209 @@ main div.section div#items div.card-items{
 main div.section div#items div#ten,
 main div.section div#items div#eleven,
 main div.section div#items div#twelve{
-    border-bottom: none;
+  border-bottom: none;
 }
 
 main div.section div#items div#three,
 main div.section div#items div#six,
 main div.section div#items div#nine,
 main div.section div#items div#twelve{
-    border-right: none;
+  border-right: none;
 }
 
 main div.section div#items div.card-items div.icon{
-    border: 1.5px solid var(--general-gray);
-    border-radius: 50%;
-    width: 3.5em;
-    height: 3.5em;
-    margin: auto;
+  border: 1.5px solid var(--general-gray);
+  border-radius: 50%;
+  width: 3.5em;
+  height: 3.5em;
+  margin: auto;
 }
 
 main div.section div#items div.card-items div.icon i{
-    font-size: 1.9rem;
-    margin-top: .75em;
+  font-size: 1.9rem;
+  margin-top: .68em;
 }
 
 main div.section div#items div.card-items div.number{
-    font-size: 2.5rem;
-    padding: .8em;
+  font-size: 2.5rem;
+  padding: .8em;
 }
 
 /* Additional Elements */
 
 main div.big-section{
-    margin-top: 5em;
-    border-top: 1.5px solid var(--border-section-gray);
+  margin-top: 5em;
+  border-top: 1.5px solid var(--border-section-gray);
 }
 
 main div.big-section div.section div.subSection{
-    margin: 4em;
-    display: grid;
-    grid-template-columns: 1.15fr 3fr;
-    justify-items: left;
-    border-bottom: 1.5px solid var(--general-gray);
+  margin: 4em;
+  display: grid;
+  grid-template-columns: 1.15fr 3fr;
+  justify-items: left;
+  border-bottom: 1.5px solid var(--general-gray);
 }
 
 main div.big-section div.section div.subSection h3{
-    font-size: 2.5rem;
-    font-weight: var(--font-weight);
+  font-size: 2.2rem;
+  font-weight: var(--font-weight);
 }
 
 main div.big-section div.section div.subSection div.text{
-    font-size: 1.4rem;
-    font-weight: var(--font-weight);
-    line-height: var(--line-height);
-    text-align: center;
-    padding-bottom: 4em;
+  font-size: 1.3rem;
+  font-weight: var(--font-weight);
+  line-height: var(--line-height);
+  text-align: center;
+  padding-bottom: 4em;
 }
 
 main div.big-section div.section div.subSection div span#bold{
-    font-weight: bold;
+  font-weight: bold;
 }
 
 main div.big-section div.section div.subSection div span#italic{
-    font-style: italic;
+  font-style: italic;
 }
 
 main div.big-section div.section div.subSection div code{
-    font-family: 'Courier New', Courier, monospace;
-    background-color: var(--background-gray);
-    padding: .2em .3em;
-    margin: 0 .2em;
-    border-radius: .4rem;
+  font-family: 'Courier New', Courier, monospace;
+  background-color: var(--background-gray);
+  padding: .2em .3em;
+  margin: 0 .2em;
+  border-radius: .4rem;
 }
 
 main div.big-section div.section div.subSection div a{
-    color: var(--black);
+  color: var(--black);
 }
 
-/* Form */
+main div.big-section div.section div.subSection div a:hover{
+  color: var(--light-blue);
+  text-decoration: none;
+}
 
-/* main div.big-section div.section div.subSection{
-    display: grid;
-    grid-template-columns: 1.15fr 3fr;
+/* FORM */
+
+main div.big-section div.section div.subSection form{
+  font-size: 1.3rem;
+  font-weight: var(--font-weight);
+  line-height: var(--line-height);
+  text-align: left;
+}
+
+/* Input Name and Email */
+
+main div.big-section div.section div.subSection form label{
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+main div.big-section div.section div.subSection form div.input{
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+}
+
+main div.big-section div.section div.subSection form div.input div input{
+  border: 1px solid var(--general-gray);
+  border-radius: .4rem;
+  padding: 1em 11em 1em 1em;
+  margin: 1em 0 2em;
+}
+
+main div.big-section div.section div.subSection form div.input div input:focus,
+main div.big-section div.section div.subSection form div.textarea label div#textarea textarea:focus{
+  border: 1px solid var(--light-blue);
+}
+
+main div.big-section div.section div.subSection form div.input div label div#name{
+  margin-right: 1.7em;
+}
+
+/* Select */
+
+main div.big-section div.section div.subSection form div.select div{
+  border: 1px solid var(--general-gray);
+  border-radius: .4rem;
+  margin: 1em 2em 1.5em 0;
+  padding: .4em 1em;
+  width: 100%;
+}
+
+main div.big-section div.section div.subSection form div.select div select{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.3rem;
+  font-weight: var(--font-weight);
+  width: inherit;
+}
+
+/* main div.big-section div.section div.subSection form div.select div:focus{
+  border-color: var(--light-blue);
 } */
 
-main div.big-section div.section div.subSection div.form{
-    font-size: 1.4rem;
-    font-weight: var(--font-weight);
-    line-height: var(--line-height);
-    text-align: left;
+
+/* Priority */
+
+main div.big-section div.section div.subSection form div.priority{
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  margin-bottom: 1em;
 }
 
-main div.big-section div.section div.subSection div.form label{
-    font-size: 1.3rem;
-    font-weight: 400;
+main div.big-section div.section div.subSection form div.priority div{
+  margin-right: 6em;
 }
 
-main div.big-section div.section div.subSection div.form div.input{
-    display: flex;
-    flex-direction: row;
-    justify-items: space-between;
+main div.big-section div.section div.subSection form div.priority div input{
+  margin-right: 1em;
 }
 
-main div.big-section div.section div.subSection div.form div.input div input{
-    border: 1px solid var(--general-gray);
-    border-radius: .4rem;
-    margin: 1em 0 2em;
-    padding: 1.1em 8em;
+/* Textarea */
+
+main div.big-section div.section div.subSection form div.textarea div#textarea textarea{
+  border: 1px solid var(--general-gray);
+  border-radius: .4rem;
+  width: 100%;
+  margin: 1em 0 1em;
+  padding: 1em;
 }
 
-main div.big-section div.section div.subSection div.form div.input div label div#name{
-    margin-right: 1.7em;
+/* Checkbox */
+
+main div.big-section div.section div.subSection form div.checkbox input{
+  margin-right: 1em;
+  margin-bottom: 2em;
 }
 
-main div.big-section div.section div.subSection div.form div.select div{
-    border: 1px solid var(--general-gray);
-    border-radius: .4rem;
-    margin: 1em 2em 1.5em 0;
-    padding: .4em 1em;
-    width: 100%;
+main div.big-section div.section div.subSection form div.checkbox input:last-of-type{
+  margin-left: 6em;
 }
 
-main div.big-section div.section div.subSection div.form div.select div select{
-    width: 100%;
+/* Button */
+
+main div.big-section div.section div.subSection form button{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 1.1em 2.2em;
+  border: 1px solid var(--general-gray);
+  border-radius: 6rem;
+  background-color: var(--white);
+  color: var(--black);
+  margin: 1em 0 4em;
+  cursor: pointer;
+  letter-spacing: .1em;
 }
 
-main div.big-section div.section div.subSection div.form div.select div select option{
-    /* font-size: 1.4rem;
-    font-weight: var(--font-weight); */
-    font-size: 1.4rem;
-    font-weight: var(--font-weight);
-    -webkit-font-weight: var(--font-weight);
+main div.big-section div.section div.subSection form button:hover{
+  color: var(--light-blue);
+  border-color: var(--light-blue);
 }
 
-
-main div.big-section div.section div.subSection div.form textarea{
-    border: 1px solid var(--general-gray);
-    border-radius: .4rem;
-}
-
+/* main div.big-section div.section div.subSection form input:focus,
+main div.big-section div.section div.subSection form select:focus,
+main div.big-section div.section div.subSection form button:hover{
+  border-color: var(--light-blue);
+  text-decoration: none;
+} */
