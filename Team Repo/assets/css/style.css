@@ -30,6 +30,11 @@
     --blue-footer: #504651; /*Giselle*/
 }
 
+body{
+  max-width: 70%;
+  margin: auto;
+}
+
 
 /* Gallery */
 
@@ -285,10 +290,6 @@ main div.big-section div.section div.subSection form div.select div select{
   width: inherit;
 }
 
-/* main div.big-section div.section div.subSection form div.select div:focus{
-  border-color: var(--light-blue);
-} */
-
 
 /* Priority */
 
@@ -349,9 +350,3 @@ main div.big-section div.section div.subSection form button:hover{
   border-color: var(--light-blue);
 }
 
-/* main div.big-section div.section div.subSection form input:focus,
-main div.big-section div.section div.subSection form select:focus,
-main div.big-section div.section div.subSection form button:hover{
-  border-color: var(--light-blue);
-  text-decoration: none;
-} */
