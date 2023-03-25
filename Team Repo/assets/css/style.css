@@ -201,9 +201,148 @@ main section.spotlight div.spotlight-section div.spotlight-text h2{
   margin-bottom: 0.8em;
 }
 
+/*SECCIÓN FEHD*/
+
+ main div.section{
+  width: 75%;
+  margin: auto;
+}
+
+main div.big-section{
+  margin-top: 5em;
+}
+
+main div.big-section div.section div.subSection{
+  margin: 3em;
+  display: grid;
+  grid-template-columns: 1.15fr 3fr;
+  justify-items: left;
+  border-bottom: 1.5px solid var(--general-gray);
+}
+
+main div.big-section div.section div.subSection h3{
+  font-size: 3rem;
+  font-weight: var(--font-weight);
+  letter-spacing: -.1rem;
+  margin-top: 1em;
+}
+
+div.section div.subSection div.sectionContent {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 25px;
+  font-weight: var(--font-weight);
+}
+
+/* TABLE */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table:not(:last-of-type) {
+  margin-bottom: 3em;
+}
+
+table caption {
+  text-align: left;
+  font-size: 2rem;
+  letter-spacing: -.1rem;
+}
+
+table th, table td {
+  padding: 1em;
+  text-align: left;
+  font-size: 1.8rem;
+}
+
+table th{
+  font-weight: 400;
+}
+
+table tbody tr:nth-of-type(odd) {
+  border-top: 1px solid var(--border-section-gray);
+  background-color: var(--background-gray);
+}
+
+/* Table Default */
+
+table.tableDefault thead tr{
+  border-bottom: 3px solid var(--general-gray);
+}
+
+table.tableDefault tbody tr{
+  border-top: 1px solid var(--general-gray);
+}
+
+table.tableDefault tfoot tr {
+  border-top: 2px solid var(--general-gray);
+}
+
+/* Table Alternate */
+
+table.tableAlternate tbody tr td{
+  border: 1px solid var(--general-gray);
+}
+
+/* IMAGES */
+
+img{
+  box-shadow: 1px 1px 12px 1px var(--general-gray);
+}
+
+#sectionFit img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.imageSection.floatImage img {
+  width: 150px;
+}
+.imageSection.floatImage p {
+  overflow: auto;
+  line-height: var(--line-height);
+  font-size: 2rem;
+}
+.imageSection.floatRight img {
+  float: right;
+  width: 25%;
+  height: auto;
+  margin-left: 1em;
+  margin-bottom: 0.5em;
+}
+
+.imageSection.floatLeft img {
+  float: left;
+  width: 25%;
+  height: auto;
+  margin-right: 1.5em;
+  margin-bottom: .65em;
+}
+
+.imageSection .subtitle {
+  margin: 1.5em 0;
+  font-weight: var(--font-weight);
+  font-size: 2rem;
+}
+
+/* BOX */
+
+div.subSection div.box{
+  font-size: 2rem;
+  font-weight: var(--font-weight);
+  line-height: var(--line-height);
+  padding: 1.5em;
+  border: 1px solid var(--general-gray);
+  border-radius: .4rem;
+  margin: 1em 0 5em;
+}
+
 /* ------------------------------------ */
 
-/* footer */
+/* FOOTER */
 footer{
   display: flex;
   align-items: center;
@@ -250,7 +389,6 @@ footer div.footer-content div.footer-nav-social div.footer-icons a.fa-brands:hov
 footer div.footer-content div.footer-nav-social div.footer-icons a.fa:hover{
   color: var(--light-blue); 
 }
-
 
 /* copyright heart icon color */
 footer .copyright h4 i {
