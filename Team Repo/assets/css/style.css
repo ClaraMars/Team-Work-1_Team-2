@@ -221,16 +221,15 @@ main div.big-section div.section div.subSection{
 }
 
 main div.big-section div.section div.subSection h3{
-  font-size: 3rem;
+  font-size: 2.2rem;
   font-weight: var(--font-weight);
-  letter-spacing: -.1rem;
-  margin-top: 1em;
+  letter-spacing: -.05rem;
 }
 
 div.section div.subSection div.sectionContent {
   width: 100%;
   margin-top: 10px;
-  margin-bottom: 25px;
+  margin-bottom: 4em;
   font-weight: var(--font-weight);
 }
 
@@ -247,18 +246,20 @@ table:not(:last-of-type) {
 
 table caption {
   text-align: left;
-  font-size: 2rem;
-  letter-spacing: -.1rem;
+  font-size: 1.4rem;
+  letter-spacing: -.05rem;
+  margin-bottom: .5em;
 }
 
 table th, table td {
-  padding: 1em;
+  padding: .8em;
   text-align: left;
-  font-size: 1.8rem;
+  font-size: 1.3rem;
 }
 
 table th{
   font-weight: 400;
+  font-size: 1.2rem;
 }
 
 table tbody tr:nth-of-type(odd) {
@@ -269,7 +270,7 @@ table tbody tr:nth-of-type(odd) {
 /* Table Default */
 
 table.tableDefault thead tr{
-  border-bottom: 3px solid var(--general-gray);
+  border-bottom: 2px solid var(--general-gray);
 }
 
 table.tableDefault tbody tr{
@@ -304,7 +305,7 @@ img{
 .imageSection.floatImage p {
   overflow: auto;
   line-height: var(--line-height);
-  font-size: 2rem;
+  font-size: 1.3rem;
 }
 .imageSection.floatRight img {
   float: right;
@@ -325,13 +326,13 @@ img{
 .imageSection .subtitle {
   margin: 1.5em 0;
   font-weight: var(--font-weight);
-  font-size: 2rem;
+  font-size: 1.4rem;
 }
 
 /* BOX */
 
 div.subSection div.box{
-  font-size: 2rem;
+  font-size: 1.3rem;
   font-weight: var(--font-weight);
   line-height: var(--line-height);
   padding: 1.5em;
