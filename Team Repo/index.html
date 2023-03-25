@@ -6,12 +6,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Team 2</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;600&family=Source+Sans+Pro:wght@200;300;400;600&family=Darker+Grotesque:wght@300&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <main>
+     <!-- Header -->
+    <header>
+      <div class="header-text">
+        <h1><i class="fa-solid fa-terminal"></i><span>CODE</span> Team</h1>
+        <h3>A responsive single-page template (modular, highly modifiable)
+          designed by
+          <a href="https://codespaceacademy.com/" target="_blank">CODE SPACE</a> and released
+          for free under the
+          <a href="https://creativecommons.org/" target="_blank">Creative Commons</a>.
+        </h3>
+        <p>This is a <strong>Banner</strong> component, and is usually used as
+          an intro or opening statement. You can customize its appeareance
+          with a number of modifiers, as well as assign it an optional
+          <code>onload</code> or <code>onscroll</code> transition modifier (<a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/banner_role" target="_blank">details</a>).
+        </p>
+        <div class="button-header">
+          <button>GET STARTED</button>
+        </div>
+      </div>
+
+      <div class="header-image">
+        <img src="./img/banner.jpg" alt="man jumping into the water" />
+      </div>
+    </header>
+    <!----------------------------------------------------------->
+    <main> 
+      <section class="spotlight">
+        <!-- Spotlight 1 -->
+        <div class="spotlight-section">
+          <div class="spotlight-image">
+            <img src="./img/spotlight01.jpg" alt="hand with mug"/>
+          </div>
+            <div class="spotlight-text">
+              <h2>Spotlight</h2>
+              <p>This is a <strong>Spotlight</strong> element, and it's generally
+                used - as the name suggests - to highlight a particular feature,
+                subject, or pretty much anything. You can customise its appearance
+                with a choice of modifiers, as well as assign it an optional
+                <code>onload</code> or <code>onscroll</code> transition modifier (<a href="https://medium.com/theleanprogrammer/how-to-create-a-spotlight-effect-d1e580e0350">details</a>).</p>
+              <div class="button-spotlight"><button>LEARN MORE</button></div>
+            </div>
+        </div>
+
+        <!-- Spotlight 2 -->
+        <div class="spotlight-section">
+          <div class="spotlight-text">
+            <h2>Spotlight</h2>
+            <p>This is also <strong>Spotlight</strong> component, and it's here
+              because this app would look a bit empty with just one spotlight. Like
+              all spotlights, you can customise its appearance with a choice of
+              modifiers, as well as assign it an optional <code>onload</code> or
+              <code>onscroll</code> transition modifier (<a href="">details</a>).</p>
+            <div class="button-spotlight"><button>LEARN MORE</button></div>
+          </div>
+          <div class="spotlight-image" id="spotlight-image2">
+            <img src="./img/spotlight02.jpg" alt="Man surfing with a sunset"/>
+          </div>
+        </div>
+
+        <!-- Spotlight 3 -->
+        <div class="spotlight-section">
+          <div class="spotlight-image">
+            <img src="./img/spotlight03.jpg" alt="Hands making heart sign with the sun in the center"/>
+          </div>
+          <div class="spotlight-text">
+            <h2>Spotlight</h2>
+            <p>And yes, this is another <strong>Spotlight</strong> component, and
+              it's also here because in order to fill a bit of spacer. Naturally,
+              like any other spotlight, you can customise its appearance with a
+              choice of modifiers, as well as assign it an optional <code>onload</code> or <code>onscroll</code> transition modifier (<a href="">details</a>).</p>
+            <div class="button-spotlight">
+              <button>LEARN MORE</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!--SECCIÓN FEHD -->
       <div class="big-section">
         <div class="section">
           <div class="subSection">
@@ -168,6 +248,33 @@
         </div>
       </div>
     </main>
+    <!------------------------------------------------------------>
+    <!-- start footer -->
+    <footer>
+      <div class="footer-content">
+        <div class="footer-nav-social">
+          <!-- twitter icon -->
+          <div class="footer-icons"><a href="https://twitter.com/codespaceacade" class="fa fa-twitter" target="_blank"></a></div>
+          <!-- instagram icon -->
+          <div class="footer-icons"><a href="https://www.instagram.com/codespaceacademy/" class="fa fa-instagram" target="_blank"></a></div>
+          <!-- facebook icon -->
+          <div class="footer-icons"><a href="https://www.facebook.com/Codespaceacademy/" class="fa fa-facebook-f" target="_blank"></a></div>
+          <!-- linkdin icon -->
+          <div class="footer-icons"><a href="https://www.linkedin.com/school/codespaceacademy" class="fa-brands fa-linkedin" target="_blank"></a></div>
+          <!-- github icon -->
+          <div class="footer-icons"><a href="https://github.com/cod3spac3Academy" class="fa fa-github" target="_blank"></a></div>
+        </div>
+        <!-- add copyright CODE SPACE link -->
+        <div class="copyright">
+          <h4>
+            Made with <i class="fa-solid fa-heart"></i> by
+            <a class="codespace" href="https://codespaceacademy.com/"
+              >CODE SPACE</a>Team.
+          </h4>
+        </div>
+      </div>
+    </footer>
+    <!-- end footer -->
   </body>
   <script
     src="https://kit.fontawesome.com/fb2e14d236.js"

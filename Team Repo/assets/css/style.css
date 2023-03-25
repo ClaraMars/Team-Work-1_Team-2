@@ -27,8 +27,181 @@
   --red: rgb(223, 54, 54); /*Giselle*/
   --light-blue: rgb(71, 211, 228); /*Juanma*/
   --green-footer: #7aa194; /*Giselle*/
+  --dark-green-footer: #628076;
   --blue-footer: #504651; /*Giselle*/
+  --header-shadow: #859396;
+  --spotlight-shadow: #DBDCDB;
 }
+
+img{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Header */
+header{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--border-section-gray);
+}
+
+header > div{
+  width: 50%;
+  height: 100%;
+}
+
+/* HEADER-TEXT */
+
+header div.header-text{
+  padding: 10em 5em;
+}
+
+/*Header title*/
+header h1{
+  font-family: 'Darker Grotesque', sans-serif;
+  font-size: 5.5rem;
+  font-weight: 300;
+  font-style: italic;
+  letter-spacing: .1rem;
+}
+
+header h1 i{
+  font-size: 5rem;
+}
+
+/* header "red" CODE title span */
+header h1 span{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 5rem;
+  color: var(--red);
+  font-weight:600;
+  letter-spacing: -.4rem;
+}
+
+/* div header-text first paragraph big*/
+header h3{
+  font-size: 1.7rem;
+  margin: .8em 0 1.8em;
+  font-weight: var(--font-weight);
+  line-height: 1.5em;
+}
+
+/* adjust the size of header and spotlight text */
+
+header p,
+main section.spotlight div.spotlight-section div.spotlight-text p{
+  font-size: 1.3rem;
+  font-weight: var(--font-weight);
+  line-height: var(--line-height);
+  margin-bottom: 2em;
+}
+
+/* strong header and spotlight weight */
+header p strong,
+main section.spotlight p strong{
+  font-weight: 500;
+}
+
+/*this give the color black to the header and spotlight links */
+header a,
+main section.spotlight a{
+  color: black;
+}
+
+/*links hover*/
+header a:hover,
+main section.spotlight a:hover{
+  color: var(--light-blue);
+  text-decoration: none;
+}
+
+/* color code for header and spotlight */
+header p code,
+main section.spotlight p code{
+  font-family: "Courier New", Courier, monospace;
+  background-color: var(--background-gray);
+  padding: .2em .3em;
+  margin: 0 .2em;
+  border-radius: .4rem;
+}
+
+/* button for header and spotlight */
+header div.button-header button,
+main section.spotlight div.button-spotlight button{
+  font-family: "Assistant", sans-serif;
+  background-color: var(--white);
+  border: 1.4px solid var(--general-gray);
+  border-radius: 2rem;
+  letter-spacing: .1em; 
+  padding: 1.1em 3em;
+  text-align: center;
+  cursor: pointer;
+}
+/* button hover */
+header div.button-header button:hover,
+main section.spotlight div.button-spotlight button:hover{
+  border-color: var(--light-blue);
+  color: var(--light-blue);
+}
+
+/* HEADER IMAGE */
+
+header div.header-image img{
+  height: inherit;
+  object-fit: cover;
+  box-shadow: -.1px 0 5px 0 var(--header-shadow);
+}
+
+/* SPOTLIGHT SECTION */
+
+main section.spotlight div.spotlight-section{
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--border-section-gray);
+  height: 365px;
+}
+
+/* spotlight settings images  */
+
+main section.spotlight div.spotlight-section div.spotlight-image{
+  width: 35%;
+  height: 100%;
+  align-self: stretch;
+}
+
+main section.spotlight div.spotlight-section div.spotlight-image img{
+  box-shadow: 0 .2px 6px 0 var(--spotlight-shadow);
+  width: 100%;
+  height: inherit;
+  object-fit: cover;
+}
+
+main div#spotlight-image2 img{
+  box-shadow: -.2px 0 6px 0 var(--spotlight-shadow);
+}
+
+/* spotlight text */
+
+main section.spotlight div.spotlight-section div.spotlight-text{
+  padding: 0em 4.7em;
+  width: 65%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+main section.spotlight div.spotlight-section div.spotlight-text h2{
+  font-size: 2.5rem;
+  font-weight: var(--font-weight);
+  letter-spacing: -.1rem;
+  margin-bottom: 0.8em;
+}
+
+/*SECCIÓN FEHD*/
 
  main div.section{
   width: 75%;
@@ -53,7 +226,6 @@ main div.big-section div.section div.subSection h3{
   letter-spacing: -.1rem;
   margin-top: 1em;
 }
-
 
 div.section div.subSection div.sectionContent {
   width: 100%;
@@ -126,7 +298,6 @@ img{
   display: block;
 }
 
-
 .imageSection.floatImage img {
   width: 150px;
 }
@@ -167,4 +338,78 @@ div.subSection div.box{
   border: 1px solid var(--general-gray);
   border-radius: .4rem;
   margin: 1em 0 5em;
+}
+
+/* ------------------------------------ */
+
+/* FOOTER */
+footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--blue-footer);
+  padding: 4.7em;
+  text-align: center !important;
+}
+
+/* social-icon to ajuste the icon size */
+footer div.footer-content div.footer-nav-social{
+  display: flex;
+  flex-direction: row;
+}
+
+footer div.footer-content div.footer-nav-social div.footer-icons{
+  background-color: var(--green-footer);
+  width: 3.5em;
+  height: 3.5em;
+  margin-right: .8em;
+  border: 1px solid var(--dark-green-footer);
+  border-radius: 50%;
+  position: relative;
+}
+
+footer div.footer-content div.footer-nav-social div.footer-icons a.fa-brands,
+footer div.footer-content div.footer-nav-social div.footer-icons a.fa {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: white;
+  position: absolute;
+  padding: .9em;
+  top: -.25em;
+  left: -.25em;
+}
+
+/* hover efect with mouse on top */
+footer div.footer-content div.footer-nav-social div.footer-icons:hover{
+  background: var(--white);
+  border: 1px solid var(--light-blue);
+}
+
+footer div.footer-content div.footer-nav-social div.footer-icons a.fa-brands:hover,
+footer div.footer-content div.footer-nav-social div.footer-icons a.fa:hover{
+  color: var(--light-blue); 
+}
+
+/* copyright heart icon color */
+footer .copyright h4 i {
+  color: var(--red);
+}
+
+/* copyright text settings*/
+footer .copyright h4 {
+  font-size: 1.3rem;
+  font-weight: 300;
+  color: var(--general-gray);
+  margin: 2em 0 1em;
+}
+
+/* copyright CODE SPACE link */
+footer .codespace {
+  color: var(--green-footer);
+  font-weight: bold;
+}
+
+footer .codespace:hover {
+  color: var(--light-blue);
+  text-decoration: none;
 }
