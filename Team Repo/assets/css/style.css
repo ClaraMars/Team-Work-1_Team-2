@@ -354,12 +354,12 @@ footer{
 }
 
 /* social-icon to ajuste the icon size */
-footer div.footer-content div.footer-nav-social{
+.footer-nav-social{
   display: flex;
   flex-direction: row;
 }
 
-footer div.footer-content div.footer-nav-social div.footer-icons{
+.footer-nav-social .footer-icons{
   background-color: var(--green-footer);
   width: 3.5em;
   height: 3.5em;
@@ -369,25 +369,30 @@ footer div.footer-content div.footer-nav-social div.footer-icons{
   position: relative;
 }
 
-footer div.footer-content div.footer-nav-social div.footer-icons a.fa-brands,
-footer div.footer-content div.footer-nav-social div.footer-icons a.fa {
+.footer-icons a.fa-brands,
+.footer-icons a.fa {
   font-size: 1.5rem;
   text-decoration: none;
   color: white;
-  position: absolute;
   padding: .9em;
+  position: absolute;
   top: -.25em;
   left: -.25em;
 }
 
+.footer-icons a.fa-facebook-f{
+  /* top: -.25em; */
+  left: -.1em;
+}
+
 /* hover efect with mouse on top */
-footer div.footer-content div.footer-nav-social div.footer-icons:hover{
+.footer-icons:hover{
   background: var(--white);
   border: 1px solid var(--light-blue);
 }
 
-footer div.footer-content div.footer-nav-social div.footer-icons a.fa-brands:hover,
-footer div.footer-content div.footer-nav-social div.footer-icons a.fa:hover{
+.footer-icons a.fa-brands:hover,
+.footer-icons a.fa:hover{
   color: var(--light-blue); 
 }
 
