@@ -30,6 +30,11 @@
     --blue-footer: #504651; /*Giselle*/
 }
 
+/* body{
+  max-width: 70%;
+  margin: auto;
+} */
+
 
 /* Gallery */
 
@@ -78,8 +83,6 @@ main div.gallery{
 main div.gallery div.images div img{
   margin-right: -.1em;
 }
-
-
 
 /* Gallery Hover */
 
@@ -266,29 +269,29 @@ form .input div label #name{
 
 /* Select */
 
-form .select div{
-  border: 1px solid var(--general-gray);
-  border-radius: .4rem;
-  margin: 1em 2em 1.5em 0;
-  padding: .4em 1em;
-  width: 100%;
-}
-
 form .select div select{
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 1.2rem;
   font-weight: var(--font-weight);
-  width: inherit;
+  border: 1px solid var(--general-gray);
+  border-radius: .4rem;
+  margin: 1em 2em 1.5em 0;
+  padding: .6em 1em;
+  width: 100%;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  /* Selector arrow */
+
+  background-image: url(../../img/arrow.png);
+  background-repeat: no-repeat;
+  background-position: 39em;
+  background-size: 20px;
 }
 
-/* div select:hover{
+form .select div select:focus{
   border-color: var(--light-blue);
-} */
-
-
-form div.select div select:focus{
-  border: 1px solid var(--light-blue);
-  /* outline: none; */
 }
 
 /* Priority */
@@ -310,6 +313,8 @@ form .priority div:nth-last-of-type(3){
 form .priority div input{
   margin-right: 1em;
   appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
   width: 25px;
   height: 25px;
   border: 1px solid var(--general-gray);
@@ -352,6 +357,8 @@ form .checkbox input:last-of-type{
 form .checkbox input{
   margin-right: 1em;
   appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
   width: 25px;
   height: 25px;
   border: 1px solid var(--general-gray);
