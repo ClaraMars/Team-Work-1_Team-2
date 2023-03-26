@@ -34,34 +34,34 @@
 /* Gallery */
 
 main div.section{
-    text-align: center;
-    width: 76%;
-    margin: auto;
+  text-align: center;
+  width: 75%;
+  margin: auto;
 }
 
 main div.section h2{
-    font-size: 3rem;
-    font-weight: var(--font-weight);
-    padding: 1.8em 0 .8em;
+  font-size: 3rem;
+  font-weight: var(--font-weight);
+  padding: 1.8em 0 .8em;
 }
 
 main div.section p{
-    font-size: 1.3rem;
-    font-weight: var(--font-weight);
-    line-height: var(--line-height);
+  font-size: 1.3rem;
+  font-weight: var(--font-weight);
+  line-height: var(--line-height);
 }
 
 main div.section p code{
-    font-family: 'Courier New', Courier, monospace;
-    background-color: var(--background-gray);
-    padding: .2em .3em;
-    margin: 0 .2em;
-    border-radius: .4rem;
-    font-weight: lighter!important;
+  font-family: 'Courier New', Courier, monospace;
+  background-color: var(--background-gray);
+  padding: .2em .3em;
+  margin: 0 .2em;
+  border-radius: .4rem;
+  font-weight: lighter!important;
 }
 
 main div.section p a{
-    color: var(--black);
+  color: var(--black);
 }
 
 main div.section p a:hover{
@@ -93,9 +93,9 @@ main div.gallery div.images div.galleryHover{
   opacity: 0;
   background-color: rgba(0, 0, 0, .5);
   color: var(--white);
-  padding: 4.35em 4em;
+  padding: 4.78em 4em 4.2em;
   text-align: center;
-  margin-right: -.1em;
+  /* margin-bottom: 1em; */
 }
 
 main div.gallery div.images div.galleryHover h3{
@@ -193,16 +193,17 @@ main div.big-section div.section div.subSection{
 }
 
 main div.big-section div.section div.subSection h3{
-  font-size: 2.2rem;
+  font-size: 1.8rem;
   font-weight: var(--font-weight);
 }
 
 main div.big-section div.section div.subSection div.text{
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: var(--font-weight);
   line-height: var(--line-height);
   text-align: center;
   padding-bottom: 4em;
+  padding-right: 1em;
 }
 
 main div.big-section div.section div.subSection div span#bold{
@@ -232,8 +233,8 @@ main div.big-section div.section div.subSection div a:hover{
 
 /* FORM */
 
-main div.big-section div.section div.subSection form{
-  font-size: 1.3rem;
+div.subSection form{
+  font-size: 1.2rem;
   font-weight: var(--font-weight);
   line-height: var(--line-height);
   text-align: left;
@@ -241,36 +242,31 @@ main div.big-section div.section div.subSection form{
 
 /* Input Name and Email */
 
-main div.big-section div.section div.subSection form label{
-  font-size: 1.3rem;
+form label{
+  font-size: 1.2rem;
   font-weight: 400;
 }
 
-main div.big-section div.section div.subSection form div.input{
+form .input{
   display: flex;
   flex-direction: row;
   justify-content: left;
 }
 
-main div.big-section div.section div.subSection form div.input div input{
+form .input div input{
   border: 1px solid var(--general-gray);
   border-radius: .4rem;
-  padding: 1em 11em 1em 1em;
+  padding: .8em 11em .8em 1em;
   margin: 1em 0 2em;
 }
 
-main div.big-section div.section div.subSection form div.input div input:focus,
-main div.big-section div.section div.subSection form div.textarea label div#textarea textarea:focus{
-  border: 1px solid var(--light-blue);
-}
-
-main div.big-section div.section div.subSection form div.input div label div#name{
+form .input div label #name{
   margin-right: 1.7em;
 }
 
 /* Select */
 
-main div.big-section div.section div.subSection form div.select div{
+form .select div{
   border: 1px solid var(--general-gray);
   border-radius: .4rem;
   margin: 1em 2em 1.5em 0;
@@ -278,38 +274,62 @@ main div.big-section div.section div.subSection form div.select div{
   width: 100%;
 }
 
-main div.big-section div.section div.subSection form div.select div select{
+form .select div select{
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: var(--font-weight);
   width: inherit;
 }
 
-/* main div.big-section div.section div.subSection form div.select div:focus{
+/* div select:hover{
   border-color: var(--light-blue);
 } */
 
 
+form div.select div select:focus{
+  border: 1px solid var(--light-blue);
+  /* outline: none; */
+}
+
+
 /* Priority */
 
-main div.big-section div.section div.subSection form div.priority{
+form .priority{
   display: flex;
   flex-direction: row;
   justify-content: left;
-  margin-bottom: 1em;
+  margin-bottom: 1.5em;
 }
 
-main div.big-section div.section div.subSection form div.priority div{
-  margin-right: 6em;
+form .priority div:nth-last-of-type(2),
+form .priority div:nth-last-of-type(3){
+  margin-right: 7em;
 }
 
-main div.big-section div.section div.subSection form div.priority div input{
+  /* Radio :checked */
+
+form .priority div input{
   margin-right: 1em;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border: 1px solid var(--general-gray);
+  border-radius: 50%;
+  margin-bottom: -.5em;
+}
+
+form .priority div input:checked{
+  background-color: var(--black);
+  border-color: var(--black);
+  background-image: url(../../img/tick.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 12px;
 }
 
 /* Textarea */
 
-main div.big-section div.section div.subSection form div.textarea div#textarea textarea{
+form .textarea #textarea textarea{
   border: 1px solid var(--general-gray);
   border-radius: .4rem;
   width: 100%;
@@ -319,18 +339,39 @@ main div.big-section div.section div.subSection form div.textarea div#textarea t
 
 /* Checkbox */
 
-main div.big-section div.section div.subSection form div.checkbox input{
+form .checkbox input{
   margin-right: 1em;
   margin-bottom: 2em;
 }
 
-main div.big-section div.section div.subSection form div.checkbox input:last-of-type{
+form .checkbox input:last-of-type{
   margin-left: 6em;
+}
+
+  /* Checkbox :checked */
+
+form .checkbox input{
+  margin-right: 1em;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border: 1px solid var(--general-gray);
+  border-radius: .3rem;
+  margin-bottom: -.5em;
+}
+  
+form .checkbox input:checked{
+  background-color: var(--black);
+  border-color: var(--black);
+  background-image: url(../../img/tick.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 12px;
 }
 
 /* Button */
 
-main div.big-section div.section div.subSection form button{
+form button{
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 1rem;
   font-weight: 400;
@@ -339,19 +380,19 @@ main div.big-section div.section div.subSection form button{
   border-radius: 6rem;
   background-color: var(--white);
   color: var(--black);
-  margin: 1em 0 4em;
+  margin: 2.5em 0 4em;
   cursor: pointer;
   letter-spacing: .1em;
 }
 
-main div.big-section div.section div.subSection form button:hover{
+/* Form Focus y Hover */
+
+form .input div input:focus,
+form .textarea label #textarea textarea:focus{
+  border: 1px solid var(--light-blue);
+}
+
+form button:hover{
   color: var(--light-blue);
   border-color: var(--light-blue);
 }
-
-/* main div.big-section div.section div.subSection form input:focus,
-main div.big-section div.section div.subSection form select:focus,
-main div.big-section div.section div.subSection form button:hover{
-  border-color: var(--light-blue);
-  text-decoration: none;
-} */
