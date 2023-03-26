@@ -53,30 +53,63 @@ main div.big-section div.section div.subSection h3 {
   margin-left: 0.5em;
 }
 
-/* Code */
+/* CODE */
 
-main div.big-section div.section div.subSection div.code {
+div.subSection div.code {
   width: 100%;
 }
 
-main div.big-section div.section div.subSection pre.formula {
+pre {
   font-size: 1.4rem;
   background-color: #f2f2f2;
   border-radius: 0.4rem;
   margin-bottom: 4em;
-  margin-left: -1em;
   font-family: "Courier New", Courier, monospace;
 }
 
-/* Icons */
+/* ICONS */
 
-.estilo {
-  padding-bottom: 1.2em;
-  padding-top: .4em;
-  font-size: 1.7rem;
-  color: grey;
-  margin-left: -.5em;
+div.icons {
+  padding-bottom: 3em;
 }
+
+div.icons h4 {
+  padding-bottom: 1em;
+  padding-top: .4em;
+  font-size: 1.8rem;
+  color: grey;
+  font-weight: var(--font-weight);
+}
+
+/* Icons simple */
+
+.iconsimple-container {
+  display: flex;
+  flex-direction: row;
+  width: 4em;
+  margin-left: .7em;
+  padding-bottom: 1.9em;
+}
+
+.simple {
+  font-size: 20px;
+  margin-right: 0.5px;
+  margin-left: 0.1px;
+  padding-right: 1.9em;
+  width: 1.5em;
+  height: 40px;
+}
+
+.simple i:hover{
+  color: var(--light-blue);
+}
+
+/* Icons circle */
+.iconcircle-container {
+  display: flex;
+  flex-direction: row;
+}
+
 .circle {
   width: 55px;
   height: 55px;
@@ -89,6 +122,11 @@ main div.big-section div.section div.subSection pre.formula {
   margin-right: 19px;
 }
 
+.circle i {
+  font-size: 21px;
+  padding: 1em;
+}
+
 .circle i:hover{
   color: var(--light-blue);
 }
@@ -97,360 +135,159 @@ main div.big-section div.section div.subSection pre.formula {
   border-color: var(--light-blue);
 }
 
-main div.big-section div.section div.subSection .circle i {
-  font-size: 21px;
-  padding: 1em;
-}
-.iconsimple-container {
-  display: flex;
-  flex-direction: row;
-  width: 4em;
-  padding-bottom: 1.9em;
-}
-.iconcircle-container {
-  display: flex;
-  flex-direction: row;
-  margin-left: -1.1em;
-}
-.simple {
-  font-size: 20px;
-  margin-right: 0.5px;
-  margin-left: 0.1px;
-  padding-right: 1.9em;
-  width: 1.5em;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+/* BUTTONS */
 
-.simple i:hover{
-  color: var(--light-blue);
-}
-
-.icons {
-  padding-bottom: 3em;
-}
-
-/* Buttons */
-
-main div.big-section div.section div.subSection div.pruebaflex div.buttons button{
+div.subSection div.buttons button{
   font-family: 'Source Sans Pro', sans-serif;
   letter-spacing: .1rem;
   font-size: 1.1rem;
 }
 
-div.buttons .button11:hover,
-div.buttons .button21:hover,
-div.buttons .button31:hover,
-div.buttons .button33:hover,
-div.buttons .button41:hover,
-div.buttons .button43:hover,
-div.buttons .button51:hover{
+/* Buttons hover */
+
+div.buttons .black:hover{
   background-color: var(--light-blue);
   border-color: var(--light-blue);
 }
 
-div.buttons .button12:hover,
-div.buttons .button22:hover,
-div.buttons .button32:hover,
-div.buttons .button34:hover,
-div.buttons .button42:hover,
-div.buttons .button44:hover,
-div.buttons .button52:hover{
+div.buttons .white:hover{
   color: var(--light-blue);
   border-color: var(--light-blue);
 }
 
-.file1,
-.file2,
-.file3,
-.file4,
-.file5,
-.file6 {
+.buttonFile {
   padding: 0.4em;
   margin-bottom: 3.5em;
-  margin-left: -19em;
 }
 
-.fila2{
+#buttonFile2{
   position: relative;
 }
 
-.pruebaflex {
-  display: flex;
-  margin-left: 17em;
-}
-.button11,
-.button51 {
+.generalButton{
   margin-right: 1.7em;
-  justify-content: center;
-  text-align: center;
-  width: 155px;
-  height: 60px;
   border-radius: 4rem;
-  border: 1px solid var(--black);
-  background-color: #000;
-  color: white;
 }
+
+/* Button 1 y 5 */
+.button1{
+  width: 155px;
+  height: 60px;  
+}
+
 .fa-solid {
   padding-right: 0.5em;
 }
 
-.button12,
-.button52 {
-  justify-content: center;
-  text-align: center;
-  width: 155px;
-  height: 60px;
-  border-radius: 4rem;
-  border: 1px solid var(--button-gray);
-  background-color: white;
-  color: black;
-}
-.button21 {
-  margin-right: 1.7em;
+/* Button 2 */
+#button21 {
   width: 165px;
   height: 60px;
-  border: 1px solid var(--black);
-  border-radius: 4rem;
-  background-color: #000;
-  color: white;
 }
-.button22 {
-  margin-right: 1.7em;
 
+#button22 {
   width: 145px;
   height: 50px;
-  border: 1px solid var(--button-gray);
-  border-radius: 4rem;
-  background-color: white;
-  color: var(--black);
   position: absolute;
 }
-.button23 {
+#button23 {
   margin-right: 1em;
-  /* justify-content: center; */
-  /* text-align: center; */
   width: 85px;
   height: 40px;
   border: 1px solid rgb(71, 211, 228);
   border-top: 1px solid var(--button-gray);
-  border-radius: 4rem;
   background-color: white;
   color: rgb(71, 211, 228);
   position: absolute;
-  left: 72em;
+  left: 26.5em;
 }
-.button31 {
-  margin-right: 1.7em;
 
+/* Button 3 */
+.button3 {
   width: 205px;
   height: 60px;
-  border: 1px solid var(--black);
-  border-radius: 4rem;
-  background-color: var(--black);
-  color: white;
 }
-.button32 {
-  margin-right: 1.7em;
 
-  width: 205px;
-  height: 60px;
-  border: 1px solid var(--button-gray);
-  border-radius: 4rem;
-  background-color: white;
-  color: var(--black);
-}
-.button33 {
-  margin-right: 1.7em;
-
-  width: 205px;
-  height: 60px;
-  border: 1px solid var(--black);
-  border-radius: 4rem;
-  background-color: var(--black);
-  color: white;
-}
-.button34 {
-  margin-right: 1.7em;
-
-  width: 205px;
-  height: 60px;
-  border: 1px solid var(--button-gray);
-  border-radius: 4rem;
-  background-color: white;
-  color: var(--black);
-}
-.button41 {
-  margin-right: 1.7em;
-
+/* Button 4 */
+.button4 {
   width: 205px;
   height: 45px;
-  border: 1px solid var(--black);
-  border-radius: 4rem;
-  background-color: var(--black);
-  color: white;
 }
-.button42 {
-  margin-right: 1.7em;
 
-  width: 205px;
-  height: 45px;
+/* Grey buttons */
+#button61 {
   border: 1px solid var(--button-gray);
-  border-radius: 4rem;
-  background-color: white;
-  color: var(--black);
-}
-.button43 {
-  margin-right: 1.7em;
-
-  width: 205px;
-  height: 45px;
-  border: 1px solid var(--black);
-  border-radius: 4rem;
-  background-color: var(--black);
-  color: white;
-}
-.button44 {
-  margin-right: 1.7em;
-
-  width: 205px;
-  height: 45px;
-  border: 1px solid var(--button-gray);
-  border-radius: 4rem;
-  background-color: white;
-  color: var(--black);
-}
-.button61 {
-  margin-right: 1.7em;
-
-  width: 155px;
-  height: 60px;
-  border: 1px solid var(--button-gray);
-  border-radius: 4rem;
   background-color: var(--button-gray);
   color: white;
 }
-.button62 {
-  margin-right: 1.7em;
-
-  width: 155px;
-  height: 60px;
+#button62 {
   border: 1px solid var(--background-gray);
-  border-radius: 4rem;
   background-color: white;
   color: var(--general-gray);
 }
 
-/* Actions */
+/* ACTIONS */
+div.subSection div.actionsButtons{
+  margin-bottom: 3em;
+}
 
-main div.big-section div.section div.subSection div.actions p{
-  font-family: 'Source Sans Pro', sans-serif;
+div.subSection div.actionsButtons p{
   font-size: 1.8rem;
   font-weight: var(--font-weight);
 }
 
-main div.big-section div.section div.subSection div.actions button{
+div.subSection div.actionsButtons button{
   font-family: 'Source Sans Pro', sans-serif;
   letter-spacing: .1rem;
   font-size: 1.1rem;
 }
 
-.tittleactions{
-  font-size: 1.5rem;
-  margin-left: -.4em;
+div.actionsButtons h4{
+  font-size: 1.8rem;
+  font-weight: var(--font-weight);
 }
-.actionDefault1 {
+
+/* Action buttons position  */
+.action{
   margin: 1.5em 1em 3em 0;
-  justify-content: center;
-  text-align: center;
   width: 140px;
   height: 55px;
-  border: 1px solid var(--black);
   border-radius: 4rem;
-  background-color: #000;
-  color: white;
 }
-.actionDefaul2 {
-  margin: 1.5em 1em 3em 0;
-  justify-content: center;
-  text-align: center;
-  width: 140px;
-  height: 55px;
-  border: 1px solid var(--button-gray);
-  border-radius: 4rem;
-  background-color: white;
-  color: black;
-}
-.actionSmall1 {
-  margin: 1.5em 1em 3em 0;
-  justify-content: center;
-  text-align: center;
+
+.small{
   width: 100px;
   height: 40px;
-  border: 1px solid var(--black);
-  border-radius: 4rem;
-  background-color: #000;
-  color: white;
 }
-.actionSmall2 {
-  margin: 1.5em 1em 3em 0;
-  justify-content: center;
-  text-align: center;
-  width: 100px;
-  height: 40px;
-  border: 1px solid var(--button-gray);
-  border-radius: 4rem;
-  background-color: white;
-  color: black;
-}
+
 .actionsStacked,
 .actionsStackedFit {
   display: flex;
   flex-direction: column;
+  margin-bottom: 1em;
 }
-.actionStacked1 {
-  margin: 1.5em 1em 1.5em 0;
-  justify-content: center;
-  text-align: center;
+
+.stacked{
+  margin: 1.5em 1em .9em 0;
   width: 140px;
   height: 55px;
+}
+
+.stackedFit{
+  margin: 1.5em 1em .9em 0;
+  width: 400px;
+  height: 50px;
+}
+
+/* Buttons and Action colors */
+.black{
   border: 1px solid var(--black);
-  border-radius: 4rem;
   background-color: #000;
   color: white;
 }
-.actionStacked2 {
-  margin: 1.5em 1em 1.5em 0;
-  justify-content: center;
-  text-align: center;
-  width: 140px;
-  height: 55px;
+
+.white{
   border: 1px solid var(--button-gray);
-  border-radius: 4rem;
-  background-color: white;
-  color: black;
-}
-.actionStackedFit1 {
-  margin: 1.5em 1em 1.5em 0;
-  justify-content: center;
-  text-align: center;
-  width: 400px;
-  height: 50px;
-  border: 1px solid var(--black);
-  border-radius: 4rem;
-  background-color: #000;
-  color: white;
-}
-.actionStackedFit2 {
-  margin: 1.5em 1em 5em 0;
-  justify-content: center;
-  text-align: center;
-  width: 400px;
-  height: 50px;
-  border: 1px solid var(--button-gray);
-  border-radius: 4rem;
   background-color: white;
   color: black;
 }
