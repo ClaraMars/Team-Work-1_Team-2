@@ -8,7 +8,7 @@
 }
 :root {
   /* General letter */
-  font-family: "Assistant", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 0.785rem;
   color: black;
 
@@ -35,11 +35,7 @@ main div.big-section div.section {
   margin: auto;
 }
 
-main div.big-section div.section div.headings,
-main div.big-section div.section section.Listadesordenada,
-main div.big-section div.section section.listaOrdenada,
-main div.big-section div.section section.listaDetallada,
-main div.big-section div.section section.cita {
+main div.big-section div.section div.subSection {
   margin: 4em;
   display: grid;
   grid-template-columns: 1.15fr 3fr;
@@ -47,317 +43,200 @@ main div.big-section div.section section.cita {
   font-weight: 200;
 }
 
-main div.big-section div.section div.headings h3 {
-  margin-left: 0.5em;
+main div.big-section div.section div.subSection h3 {
   font-size: 2.9rem;
-  font-weight: var(--font-weight);
+  font-weight: 300;
   padding: 0.6em 0em 0em 0em;
 }
 
 /*Headings Class Levels*/
 
-main div.big-section div.section div.headings div.headingsLevel div.levels {
+div.subSection div.headingsLevel div.levels {
   border-bottom: 1.5px solid var(--general-gray);
   font-weight: var(--font-weight);
 }
 
 /* Header from largest to smallest level of size */
 
-main
-  div.big-section
-  div.section
-  div.headings
-  div.headingsLevel
-  div.levels
-  p.level1 {
+div.levels p.level1 {
   font-size: 6.5rem;
   padding: 0.23em 0em 0em 0em;
   letter-spacing: -3px;
+  font-weight: 300;
 }
-main
-  div.big-section
-  div.section
-  div.headings
-  div.headingsLevel
-  div.levels
-  p.level2 {
+
+div.levels p.level2 {
   font-size: 4.3rem;
-  padding: 0.43em 0em 0.47em 0em;
+  padding: 0.5em 0em 0.5em 0em;
   letter-spacing: -3px;
 }
-main
-  div.big-section
-  div.section
-  div.headings
-  div.headingsLevel
-  div.levels
-  p.level3 {
+
+div.levels p.level3 {
   font-size: 2.9rem;
   padding: 0em 0em 0.79em 0em;
   letter-spacing: -2px;
 }
-main
-  div.big-section
-  div.section
-  div.headings
-  div.headingsLevel
-  div.levels
-  p.level4 {
+
+div.levels p.level4 {
   font-size: 2.1em;
   padding: 0em 0em 0.95em 0em;
   letter-spacing: -1px;
 }
-main
-  div.big-section
-  div.section
-  div.headings
-  div.headingsLevel
-  div.levels
-  p.level5 {
+
+div.levels p.level5 {
   font-size: 1.75rem;
-  padding: 0em 0em 1.15em 0em;
+  padding: 0em 0em 1.3em 0em;
 }
-main
-  div.big-section
-  div.section
-  div.headings
-  div.headingsLevel
-  div.levels
-  p.level6 {
+
+div.levels p.level6 {
   font-size: 1.3rem;
   padding-bottom: 3.8em;
 }
 /*Start section headings whit subtitle */
 /* Heading whit subtitle N1 */
-main
-  div.big-section
-  div.section
-  div.headings
-  div.headingsLevel
-  div.subtitle
-  p.headsubtitle1 {
+
+div.subtitle p.headsubtitle1 {
   font-size: 6.5rem;
-  padding: 0.685em 0em 0.04em 0em;
+  padding: 0.7em 0em 0.18em 0em;
   letter-spacing: -3px;
-  font-weight: var(--font-weight);
+  font-weight: 300;
 }
-main
-  div.big-section
-  div.section
-  div.headings
-  div.headingsLevel
-  div.subtitle
-  p.subtitle1 {
+
+div.subtitle p.subtitle1 {
   font-size: 2.6rem;
-  padding: 0.27em 0em 1.3em 0em;
+  padding: 0em 0em 1.3em 0em;
   font-style: italic;
   font-weight: 200;
 }
-main
-  div.big-section
-  div.section
-  div.headings
-  div.headingsLevel
-  div.subtitle
-  p.parrafo {
+
+div.subtitle p.parrafo {
   font-size: 2rem;
   line-height: 158%;
-  padding-bottom: 2.45em;
+  padding-bottom: 2.35em;
   font-weight: 200;
   border-bottom: 1.5px solid var(--general-gray);
 }
 /* Heading whit subtitle N2 */
-main
-  div.big-section
-  div.section
-  div.headings
-  div.headingsLevel
-  div.subtitle
-  p.headsubtitle2 {
+
+div.subtitle p.headsubtitle2 {
   font-size: 4.3rem;
-  padding: 1.13em 0em 0.04em 0em;
+  padding: 1.13em 0em 0.1em 0em;
   letter-spacing: -3px;
-  font-weight: var(--font-weight);
+  font-weight: 300;
 }
-main
-  div.big-section
-  div.section
-  div.headings
-  div.headingsLevel
-  div.subtitle
-  p.subtitle2 {
+
+div.subtitle p.subtitle2 {
   font-size: 2.4rem;
-  padding: 0.5em 0em 1.3em 0em;
+  padding: 0.47em 0em 1.33em 0em;
   font-style: italic;
   font-weight: 200;
 }
 /* Heading whit subtitle N3 */
-main
-  div.big-section
-  div.section
-  div.headings
-  div.headingsLevel
-  div.subtitle
-  p.headsubtitle3 {
+
+div.subtitle p.headsubtitle3 {
   font-size: 2.8rem;
   padding: 1.75em 0em 0.01em 0em;
   letter-spacing: -1px;
   font-weight: 300;
 }
-main
-  div.big-section
-  div.section
-  div.headings
-  div.headingsLevel
-  div.subtitle
-  p.subtitle3 {
+
+div.subtitle p.subtitle3 {
   font-size: 2.1rem;
-  padding: 0.6em 0em 1.4em 0em;
+  padding: 0.6em 0em 1.5em 0em;
   font-style: italic;
   font-weight: 200;
 }
-main
-  div.big-section
-  div.section
-  div.headings
-  div.headingsLevel
-  div.subtitle
-  p.parrafo3 {
+
+div.subtitle p.parrafo3 {
   font-size: 2rem;
   line-height: 158%;
   padding-bottom: 2.9em;
   font-weight: 200;
 }
 /* Start section unordered list */
-main div.big-section div.section section.Listadesordenada div.unorderedList {
-  margin-left: 0.5em;
-  font-size: 2.9rem;
-  font-weight: var(--font-weight);
-  padding: 0.6em 0em 0em 0em;
-}
+
 /* Default list */
-main div.big-section div.section section.Listadesordenada div.defaultList {
+div.defaultList {
   padding: 0.89em 0em 0em 0em;
   font-size: 2rem;
 }
-main
-  div.big-section
-  div.section
-  section.Listadesordenada
-  div.defaultList
-  p.default {
+
+div.defaultList p.default {
   font-size: 2.1rem;
-  padding-bottom: 0.9em;
+  padding-bottom: 1.1em;
+  font-weight: 300;
 }
 
-main
-  div.big-section
-  div.section
-  section.Listadesordenada
-  div.defaultList
-  ul.firstList {
+div.defaultList ul.firstList {
   padding-left: 1em;
 }
-main
-  div.big-section
-  div.section
-  section.Listadesordenada
-  div.defaultList
-  ul.firstList
-  li {
+
+div.defaultList ul.firstList li {
   list-style: disc;
-  padding: 0.15em 0em;
+  padding: 0.17em 0em;
   font-size: 0.98em;
 }
 /* Alternated list */
-main
-  div.big-section
-  div.section
-  section.Listadesordenada
-  div.defaultList
-  div.alternatedList {
+
+div.defaultList div.alternatedList {
   font-size: 2.1rem;
-  padding: 1.9em 0em 0.5em 0em;
+  padding: 1.75em 0em 0.5em 0em;
+  font-weight: 300;
 }
-main
-  div.big-section
-  div.section
-  section.Listadesordenada
-  div.defaultList
-  div.secondList
-  p {
+
+div.defaultList div.secondList p {
   border-bottom: 2px solid var(--general-gray);
-  padding: 0.6em 0em 0.6em 0em;
+  padding: 0.6em 0em 0.65em 0em;
 }
-main
-  div.big-section
-  div.section
-  section.Listadesordenada
-  div.defaultList
-  div.secondList
-  p.borderEnd {
+
+div.defaultList div.secondList p.borderEnd {
   border-bottom: 2px solid var(--white);
   padding-bottom: 3.4em;
 }
 /* Section Ordered List */
 
-main div.big-section div.section section.listaOrdenada div.orderedList {
+div.subSection div.orderedList {
   margin-left: 0.5em;
   font-size: 2.9rem;
   font-weight: var(--font-weight);
   padding: 0.6em 0em 0em 0em;
 }
-main
-  div.big-section
-  div.section
-  section.listaOrdenada
-  div.thirdList
-  ol.enumeratedList {
-  padding: 1.3em 0em 6.1em 0em;
+
+div.thirdList ol.enumeratedList {
+  padding: 1.5em 0em 6.1em 0em;
 }
-main
-  div.big-section
-  div.section
-  section.listaOrdenada
-  div.thirdList
-  ol.enumeratedList
-  li {
+
+div.thirdList ol.enumeratedList li {
   list-style: decimal;
   font-size: 2rem;
   margin-left: 0.98em;
-  padding: 0.265em 0em 0em 0em;
+  padding: 0.3em 0em 0em 0em;
 }
-/* Section definition list */
-main div.big-section div.section section.listaDetallada div.definitionList {
-  margin-left: 0.5em;
-  font-size: 2.9rem;
-  font-weight: var(--font-weight);
-  padding: 0.6em 0em 0em 0em;
-}
-main div.big-section div.section section.listaDetallada div.fourthList {
+
+div.fourthList {
   padding-bottom: 3.5em;
 }
-main div.big-section div.section section.listaDetallada div.fourthList dl dt {
+div.fourthList dl dt {
   font-size: 1.95rem;
   font-weight: 400;
-  padding-top: 0.98em;
+  padding-top: 1em;
 }
-main div.big-section div.section section.listaDetallada div.fourthList dl dd {
+div.fourthList dl dd {
   font-size: 1.95rem;
   line-height: 165%;
   padding: 1.1em 0em 1.1em 0em;
 }
 /* Section blockquote */
-main div.big-section div.section section.cita div.blockquote {
+div.subSection div.blockquote {
   margin-left: 0.5em;
   font-size: 2.9rem;
   font-weight: var(--font-weight);
   padding: 0.6em 0em 0em 0em;
 }
-main div.big-section div.section section.cita div.quote {
+div.quote {
   padding: 1.79em 0em 5.8em 0em;
 }
-main div.big-section div.section section.cita div.quote blockquote {
+div.quote blockquote {
   font-size: 1.95rem;
   line-height: 162%;
   border-left: 6px solid rgb(209, 203, 203); /* Este es el gris del blockquote que es diferente */
