@@ -24,8 +24,11 @@
             <div class="galleryHover">
               <h3>Image Title</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, molestiae.</p>
-              <button onclick="fullScreenImage('./gallery/fulls/01.jpg')">FULL WIDTH</button>
+              <button class="galleryFullScreen">FULL WIDTH</button>
             </div>
+            <!-- <div class="imageFullScreen">
+              <img src="./gallery/fulls/01.jpg" alt="Blue eye">
+            </div> -->
           </div>
           <div class="images">
             <div><img src="gallery/thumbs/02.jpg" alt="Men swimming"></div>
@@ -277,6 +280,17 @@
         </div>
 </body>
 <script src="https://kit.fontawesome.com/fb2e14d236.js" crossorigin="anonymous"></script>
+<!-- <script>
+  var toggle = document.querySelector(".galleryFullScreen");
+  var galleryFullScreen = toogle.parentElement;
+  toggle.addEventListener("click", function (gallery){
+    gallery.preventDefault();
+    galleryFullScreen.classList.toggle("imageFullScreen")
+  })
+
+</script> -->
+
+
 <!-- <script>
     function fullScreenImage(srcFullImage){
         let newImage = document.createElement("img");
