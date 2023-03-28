@@ -4,6 +4,7 @@
   border: 0;
   outline: none;
   box-sizing: border-box;
+  list-style: none;
 }
 
 :root {
@@ -39,7 +40,8 @@ img{
   /* display: block; */
 }
 
-/* Header */
+/* HEADER */
+
 header{
   width: 100vw;
   height: 100vh;
@@ -53,7 +55,7 @@ header > div{
   height: 100%;
 }
 
-/* HEADER-TEXT */
+/* Header-text */
 
 header div.header-text{
   padding: 10em 5em;
@@ -140,6 +142,7 @@ main section.spotlight div.button-spotlight button{
   text-align: center;
   cursor: pointer;
 }
+
 /* button hover */
 header div.button-header button:hover,
 main section.spotlight div.button-spotlight button:hover{
@@ -155,7 +158,7 @@ header div.header-image img{
   box-shadow: -.1px 0 5px 0 var(--header-shadow);
 }
 
-/* SPOTLIGHT SECTION */
+/* SPOTLIGHT */
 
 main section.spotlight div.spotlight-section{
   display: flex;
@@ -201,9 +204,236 @@ main section.spotlight div.spotlight-section div.spotlight-text h2{
   margin-bottom: 0.8em;
 }
 
+/* TEXT */
+
+/* Headings */
+main div.big-section div.section {
+  width: 75%;
+  margin: auto;
+}
+
+main div.big-section div.section div.subSection {
+  margin: 4em;
+  display: grid;
+  grid-template-columns: 1.15fr 3fr;
+  border-bottom: 1.5px solid var(--general-gray);
+  font-weight: 200;
+}
+
+main div.big-section div.section div.subSection h3 {
+  font-size: 2.9rem;
+  font-weight: 300;
+  padding: 0.6em 0em 0em 0em;
+}
+
+/*Headings Class Levels*/
+
+div.subSection div.headingsLevel div.levels {
+  border-bottom: 1.5px solid var(--general-gray);
+  font-weight: var(--font-weight);
+}
+
+/* Header from largest to smallest level of size */
+
+div.levels p.level1 {
+  font-size: 6.537rem;
+  padding: 0.23em 0em 0em 0em;
+  letter-spacing: -3px;
+  font-weight: 300;
+}
+
+div.levels p.level2 {
+  font-size: 4.3rem;
+  padding: 0.5em 0em 0.5em 0em;
+  letter-spacing: -3px;
+}
+
+div.levels p.level3 {
+  font-size: 2.9rem;
+  padding: 0em 0em 0.79em 0em;
+  letter-spacing: -2px;
+}
+
+div.levels p.level4 {
+  font-size: 2.1em;
+  padding: 0em 0em 0.95em 0em;
+  letter-spacing: -1px;
+}
+
+div.levels p.level5 {
+  font-size: 1.7rem;
+  padding: 0em 0em 1.3em 0em;
+  letter-spacing: -0.5px;
+
+}
+
+div.levels p.level6 {
+  font-size: 1.3rem;
+  padding-bottom: 3.8em;
+}
+
+/* Headings with subtitle */
+/* Heading whit subtitle N1 */
+
+div.subtitle p.headsubtitle1 {
+  font-size: 6.48rem;
+  padding: 0.75em 0em 0.18em 0em;
+  letter-spacing: -3px;
+  font-weight: 300;
+}
+
+div.subtitle p.subtitle1 {
+  font-size: 2.6rem;
+  padding: 0em 0em 1.3em 0em;
+  font-style: italic;
+  font-weight: 200;
+}
+
+div.subtitle p.parrafo {
+  font-size: 2rem;
+  line-height: 158%;
+  padding-bottom: 2.35em;
+  font-weight: 200;
+  border-bottom: 1.5px solid var(--general-gray);
+}
+/* Heading whit subtitle N2 */
+
+div.subtitle p.headsubtitle2 {
+  font-size: 4.3rem;
+  padding: 1.13em 0em 0.1em 0em;
+  letter-spacing: -3px;
+  font-weight: 300;
+}
+
+div.subtitle p.subtitle2 {
+  font-size: 2.4rem;
+  padding: 0.47em 0em 1.45em 0em;
+  font-style: italic;
+  font-weight: 200;
+}
+/* Heading whit subtitle N3 */
+
+div.subtitle p.headsubtitle3 {
+  font-size: 2.8rem;
+  padding: 1.75em 0em 0.01em 0em;
+  letter-spacing: -1px;
+  font-weight: 300;
+}
+
+div.subtitle p.subtitle3 {
+  font-size: 2.1rem;
+  padding: 0.6em 0em 1.5em 0em;
+  font-style: italic;
+  font-weight: 200;
+}
+
+div.subtitle p.parrafo3 {
+  font-size: 2rem;
+  line-height: 158%;
+  padding-bottom: 2.9em;
+  font-weight: 200;
+}
+
+/* UNORDERED LIST */
+
+/* Default list */
+div.defaultList {
+  padding: 0.9em 0em 0em 0em;
+  font-size: 2rem;
+}
+
+div.defaultList p.default {
+  font-size: 2.1rem;
+  padding-bottom: 1.1em;
+  font-weight: 300;
+}
+
+div.defaultList ul.firstList {
+  padding-left: 1em;
+}
+
+div.defaultList ul.firstList li {
+  list-style: disc;
+  padding: 0.17em 0em;
+  font-size: 0.98em;
+}
+/* Alternated list */
+
+div.defaultList div.alternatedList {
+  font-size: 2.1rem;
+  padding: 1.8em 0em 0.5em 0em;
+  font-weight: 300;
+}
+
+div.defaultList div.secondList p {
+  border-bottom: 1px solid var(--general-gray);
+  padding: 0.6em 0em 0.65em 0em;
+}
+
+div.defaultList div.secondList p.borderEnd {
+  border-bottom: 1px solid var(--white);
+  padding-bottom: 3.4em;
+}
+/* ORDERED LIST */
+
+div.subSection div.orderedList {
+  margin-left: 0.5em;
+  font-size: 2.9rem;
+  font-weight: var(--font-weight);
+  padding: 0.6em 0em 0em 0em;
+}
+
+div.thirdList ol.enumeratedList {
+  padding: 1.5em 0em 6.1em 0em;
+}
+
+div.thirdList ol.enumeratedList li {
+  list-style: decimal;
+  font-size: 2rem;
+  margin-left: 0.98em;
+  padding: 0.3em 0em 0em 0em;
+}
+
+/* DEFINITION LIST */
+
+div.fourthList {
+  padding-bottom: 3.5em;
+}
+div.fourthList dl dt {
+  font-size: 1.95rem;
+  font-weight: 400;
+  padding-top: 1em;
+  
+}
+div.fourthList dl dd {
+  font-size: 1.95rem;
+  line-height: 165%;
+  padding: 1.1em 0em 1.1em 0em;
+  margin-left: 2.3em;
+}
+
+/* BLOCKQUOTE */
+
+div.subSection div.blockquote {
+  margin-left: 0.5em;
+  font-size: 2.9rem;
+  font-weight: var(--font-weight);
+  padding: 0.6em 0em 0em 0em;
+}
+div.quote {
+  padding: 1.79em 0em 5.8em 0em;
+}
+div.quote blockquote {
+  font-size: 1.95rem;
+  line-height: 162%;
+  border-left: 6.5px solid rgb(209, 203, 203); /* Este es el gris del blockquote que es diferente */
+  font-style: italic;
+  padding: 0.48em 0em 0.5em 2em;
+}
+
 /*SECCIÓN FEHD*/
 
- main div.section{
+ /* main div.section{
   width: 75%;
   margin: auto;
 }
@@ -224,7 +454,7 @@ main div.big-section div.section div.subSection h3{
   font-size: 2.2rem;
   font-weight: var(--font-weight);
   letter-spacing: -.05rem;
-}
+} */
 
 div.section div.subSection div.sectionContent {
   width: 100%;
@@ -233,7 +463,7 @@ div.section div.subSection div.sectionContent {
   font-weight: var(--font-weight);
 }
 
-/* TABLE */
+/* TABLES */
 
 table {
   width: 100%;
