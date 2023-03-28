@@ -59,7 +59,7 @@ div.subSection div.headingsLevel div.levels {
 /* Header from largest to smallest level of size */
 
 div.levels p.level1 {
-  font-size: 6.5rem;
+  font-size: 6.537rem;
   padding: 0.23em 0em 0em 0em;
   letter-spacing: -3px;
   font-weight: 300;
@@ -84,8 +84,10 @@ div.levels p.level4 {
 }
 
 div.levels p.level5 {
-  font-size: 1.75rem;
+  font-size: 1.7rem;
   padding: 0em 0em 1.3em 0em;
+  letter-spacing: -0.5px;
+
 }
 
 div.levels p.level6 {
@@ -96,8 +98,8 @@ div.levels p.level6 {
 /* Heading whit subtitle N1 */
 
 div.subtitle p.headsubtitle1 {
-  font-size: 6.5rem;
-  padding: 0.7em 0em 0.18em 0em;
+  font-size: 6.48rem;
+  padding: 0.75em 0em 0.18em 0em;
   letter-spacing: -3px;
   font-weight: 300;
 }
@@ -127,7 +129,7 @@ div.subtitle p.headsubtitle2 {
 
 div.subtitle p.subtitle2 {
   font-size: 2.4rem;
-  padding: 0.47em 0em 1.33em 0em;
+  padding: 0.47em 0em 1.45em 0em;
   font-style: italic;
   font-weight: 200;
 }
@@ -157,7 +159,7 @@ div.subtitle p.parrafo3 {
 
 /* Default list */
 div.defaultList {
-  padding: 0.89em 0em 0em 0em;
+  padding: 0.9em 0em 0em 0em;
   font-size: 2rem;
 }
 
@@ -180,17 +182,17 @@ div.defaultList ul.firstList li {
 
 div.defaultList div.alternatedList {
   font-size: 2.1rem;
-  padding: 1.75em 0em 0.5em 0em;
+  padding: 1.8em 0em 0.5em 0em;
   font-weight: 300;
 }
 
 div.defaultList div.secondList p {
-  border-bottom: 2px solid var(--general-gray);
+  border-bottom: 1px solid var(--general-gray);
   padding: 0.6em 0em 0.65em 0em;
 }
 
 div.defaultList div.secondList p.borderEnd {
-  border-bottom: 2px solid var(--white);
+  border-bottom: 1px solid var(--white);
   padding-bottom: 3.4em;
 }
 /* Section Ordered List */
@@ -220,11 +222,13 @@ div.fourthList dl dt {
   font-size: 1.95rem;
   font-weight: 400;
   padding-top: 1em;
+  
 }
 div.fourthList dl dd {
   font-size: 1.95rem;
   line-height: 165%;
   padding: 1.1em 0em 1.1em 0em;
+  margin-left: 2.3em;
 }
 /* Section blockquote */
 div.subSection div.blockquote {
@@ -239,7 +243,7 @@ div.quote {
 div.quote blockquote {
   font-size: 1.95rem;
   line-height: 162%;
-  border-left: 6px solid rgb(209, 203, 203); /* Este es el gris del blockquote que es diferente */
+  border-left: 6.5px solid rgb(209, 203, 203); /* Este es el gris del blockquote que es diferente */
   font-style: italic;
   padding: 0.48em 0em 0.5em 2em;
 }
