@@ -102,7 +102,7 @@ main section.spotlight div.spotlight-section div.spotlight-text p{
 /* strong header and spotlight weight */
 header p strong,
 main section.spotlight p strong{
-  font-weight:500;
+  font-weight: 500;
 }
 
 /*this give the color black to the header and spotlight links */
@@ -161,17 +161,21 @@ main section.spotlight div.spotlight-section{
   display: flex;
   align-items: center;
   border-bottom: 1px solid var(--border-section-gray);
+  height: 365px;
 }
 
 /* spotlight settings images  */
 
-main section.spotlight div.spotlight-section .spotlight-image{
-  width: 95%;
+main section.spotlight div.spotlight-section div.spotlight-image{
+  width: 35%;
+  height: 100%;
   align-self: stretch;
 }
 
-main section.spotlight div.spotlight-section .spotlight-image img{
+main section.spotlight div.spotlight-section div.spotlight-image img{
   box-shadow: 0 .2px 6px 0 var(--spotlight-shadow);
+  width: 100%;
+  height: inherit;
   object-fit: cover;
 }
 
@@ -183,7 +187,11 @@ main div#spotlight-image2 img{
 
 main section.spotlight div.spotlight-section div.spotlight-text{
   padding: 0em 4.7em;
-  /* margin: 5em 0; */
+  width: 65%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 main section.spotlight div.spotlight-section div.spotlight-text h2{
@@ -193,53 +201,200 @@ main section.spotlight div.spotlight-section div.spotlight-text h2{
   margin-bottom: 0.8em;
 }
 
+/*SECCIÓN FEHD*/
+
+ main div.section{
+  width: 75%;
+  margin: auto;
+}
+
+main div.big-section{
+  margin-top: 5em;
+}
+
+main div.big-section div.section div.subSection{
+  margin: 3em;
+  display: grid;
+  grid-template-columns: 1.15fr 3fr;
+  justify-items: left;
+  border-bottom: 1.5px solid var(--general-gray);
+}
+
+main div.big-section div.section div.subSection h3{
+  font-size: 2.2rem;
+  font-weight: var(--font-weight);
+  letter-spacing: -.05rem;
+}
+
+div.section div.subSection div.sectionContent {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 4em;
+  font-weight: var(--font-weight);
+}
+
+/* TABLE */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table:not(:last-of-type) {
+  margin-bottom: 3em;
+}
+
+table caption {
+  text-align: left;
+  font-size: 1.4rem;
+  letter-spacing: -.05rem;
+  margin-bottom: .5em;
+}
+
+table th, table td {
+  padding: .8em;
+  text-align: left;
+  font-size: 1.3rem;
+}
+
+table th{
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+table tbody tr:nth-of-type(odd) {
+  border-top: 1px solid var(--border-section-gray);
+  background-color: var(--background-gray);
+}
+
+/* Table Default */
+
+table.tableDefault thead tr{
+  border-bottom: 2px solid var(--general-gray);
+}
+
+table.tableDefault tbody tr{
+  border-top: 1px solid var(--general-gray);
+}
+
+table.tableDefault tfoot tr {
+  border-top: 2px solid var(--general-gray);
+}
+
+/* Table Alternate */
+
+table.tableAlternate tbody tr td{
+  border: 1px solid var(--general-gray);
+}
+
+/* IMAGES */
+
+img{
+  box-shadow: 1px 1px 12px 1px var(--general-gray);
+}
+
+#sectionFit img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.imageSection.floatImage img {
+  width: 150px;
+}
+.imageSection.floatImage p {
+  overflow: auto;
+  line-height: var(--line-height);
+  font-size: 1.3rem;
+}
+.imageSection.floatRight img {
+  float: right;
+  width: 25%;
+  height: auto;
+  margin-left: 1em;
+  margin-bottom: 0.5em;
+}
+
+.imageSection.floatLeft img {
+  float: left;
+  width: 25%;
+  height: auto;
+  margin-right: 1.5em;
+  margin-bottom: .65em;
+}
+
+.imageSection .subtitle {
+  margin: 1.5em 0;
+  font-weight: var(--font-weight);
+  font-size: 1.4rem;
+}
+
+/* BOX */
+
+div.subSection div.box{
+  font-size: 1.3rem;
+  font-weight: var(--font-weight);
+  line-height: var(--line-height);
+  padding: 1.5em;
+  border: 1px solid var(--general-gray);
+  border-radius: .4rem;
+  margin: 1em 0 5em;
+}
+
 /* ------------------------------------ */
 
-/* footer */
+/* FOOTER */
 footer{
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: var(--blue-footer);
-  padding: 6em;
-  width: 100%;
+  padding: 4.7em;
   text-align: center !important;
 }
 
 /* social-icon to ajuste the icon size */
-footer div.footer-content div.footer-nav-social{
+.footer-nav-social{
   display: flex;
   flex-direction: row;
 }
 
-footer div.footer-content div.footer-nav-social div.footer-icons{
+.footer-nav-social .footer-icons{
   background-color: var(--green-footer);
-  width: 5em;
-  height: 5em;
-  margin: .8em;
+  width: 3.5em;
+  height: 3.5em;
+  margin-right: .8em;
   border: 1px solid var(--dark-green-footer);
   border-radius: 50%;
+  position: relative;
 }
 
-footer div.footer-content div.footer-nav-social div.footer-icons a.fa-brands,
-footer div.footer-content div.footer-nav-social div.footer-icons a.fa {
-  font-size: 1.8rem;
+.footer-icons a.fa-brands,
+.footer-icons a.fa {
+  font-size: 1.5rem;
   text-decoration: none;
   color: white;
   padding: .9em;
+  position: absolute;
+  top: -.25em;
+  left: -.25em;
+}
+
+.footer-icons a.fa-facebook-f{
+  /* top: -.25em; */
+  left: -.1em;
 }
 
 /* hover efect with mouse on top */
-footer div.footer-content div.footer-nav-social div.footer-icons:hover{
+.footer-icons:hover{
   background: var(--white);
   border: 1px solid var(--light-blue);
 }
 
-footer div.footer-content div.footer-nav-social div.footer-icons a.fa-brands:hover,
-footer div.footer-content div.footer-nav-social div.footer-icons a.fa:hover{
+.footer-icons a.fa-brands:hover,
+.footer-icons a.fa:hover{
   color: var(--light-blue); 
 }
-
 
 /* copyright heart icon color */
 footer .copyright h4 i {
@@ -248,7 +403,7 @@ footer .copyright h4 i {
 
 /* copyright text settings*/
 footer .copyright h4 {
-  font-size: 1.8rem;
+  font-size: 1.3rem;
   font-weight: 300;
   color: var(--general-gray);
   margin: 2em 0 1em;
