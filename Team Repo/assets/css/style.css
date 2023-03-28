@@ -123,6 +123,7 @@ div.galleryHover button{
   background-color: transparent;
   border: 2px solid var(--white);
   border-radius: 5rem;
+  cursor: pointer;
 }
 
 div.images:hover div.galleryHover{
@@ -130,9 +131,9 @@ div.images:hover div.galleryHover{
 }
 
 /* Gallery Modal Window */
-div.imageFullScreen{
+/* div.imageFullScreen{
   opacity: 0;
-}
+} */
 
 /* .galleryFullScreen.imageFullScreen{
   width: 100vw;
