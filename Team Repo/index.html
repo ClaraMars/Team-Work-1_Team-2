@@ -154,10 +154,10 @@
           <!-- UNORDERED LIST  -->
           <div class="subSection">
             <h3>Unordered List</h3>
-            <div class="defaultList">
+            <div class="unorderedList">
               <!-- Default list -->
-              <p class="default">Default</p>
-              <ul class="firstList">
+              <h4>Default</h4>
+              <ul class="defaultList">
                 <li>&nbsp;Lorem ipsum dolor sit amet</li>
                 <li>&nbsp;Interdum andipiscing gravida odio</li>
                 <li>&nbsp;Porttitor sem not integer</li>
@@ -166,14 +166,15 @@
                 <li>&nbsp;Felis amet dolore viera</li>
               </ul>
               <!-- Alternated list -->
-              <div class="alternatedList">Alternated</div>
-              <div class="secondList">
+              <!-- <div class="alternatedList">Alternated</div> -->
+              <h4>Alternated</h4>
+              <div class="alternateList">
                 <p>Lorem ipsum dolor sit amet</p>
                 <p>Interdum andipiscing gravida odio</p>
                 <p>Porttitor sem not integer</p>
                 <p>Non faucibus ornare mi ut ante</p>
                 <p>Fagittis adipisicing eleifend</p>
-                <p class="borderEnd">Felis amet dolore viera</p>
+                <p id="borderEnd">Felis amet dolore viera</p>
               </div>
             </div>
           </div>
@@ -181,8 +182,8 @@
           <!-- ORDERED LIST -->
           <div class="subSection">
             <h3>Ordered List</h3>
-            <div class="thirdList">
-              <ol class="enumeratedList">
+            <div class="orderedList">
+              <ol>
                 <li>&nbsp;Lorem ipsum dolor sit amet</li>
                 <li>&nbsp;Interdum andipiscing gravida odio</li>
                 <li>&nbsp;Porttitor sem not integer</li>
@@ -196,7 +197,7 @@
           <!-- DEFINITION LIST -->
           <div class="subSection">
             <h3>Definition List</h3>
-            <div class="fourthList">
+            <div class="definitionList">
               <dl>
                 <dt>Interdum andipiscing odio</dt>
                 <dd>
@@ -235,10 +236,10 @@
               </blockquote>
             </div>
           </div>
-        </div>
+        <!-- </div> -->
 
       
-        <div class="section">
+        <!-- <div class="section"> -->
         
           <!-- CODE -->
           <div class="subSection">
@@ -248,13 +249,11 @@
   
    i = 0;
 
-
    while (!deck.isInOrder()) {
        print 'Iterenation ' + i;
        deck.shuffle ();
        i++;
    }
-
 
    print 'It took ' + i + ' iterations to sort the deck.';
                         </pre
@@ -356,22 +355,22 @@
               </div>
             </div>
           </div>
-        </div>
+        <!-- </div> -->
       
       <!--TABLES -->
-        <div class="section">
+        <!-- <div class="section"> -->
           <div class="subSection">
-            <h3 class="sectionTitle">Table</h3>
-            <div class="sectionContent">
+            <h3>Table</h3>
+            <div class="table">
               <table class="tableDefault">
                 <caption>
                   Default
                 </caption>
                 <thead>
                   <tr>
-                    <th>Name</th>
-                    <th>Description</th>
-                    <th>Price</th>
+                    <th class="name">Name</th>
+                    <th class="description">Description</th>
+                    <th class="price">Price</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -415,9 +414,9 @@
                 </caption>
                 <thead>
                   <tr>
-                    <th>Name</th>
-                    <th>Description</th>
-                    <th>Price</th>
+                    <th class="name">Name</th>
+                    <th class="description">Description</th>
+                    <th class="price">Price</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -460,16 +459,16 @@
           
           <!--IMAGES -->
           <div class="subSection">
-            <h3 class="sectionTitle">Images</h3>
-            <div class="sectionContent">
+            <h3>Images</h3>
+            <div class="images">
               <div class="imageSection" id="sectionFit">
-                <h4 class="subtitle">Fit</h4>
+                <h4>Fit</h4>
                 <img src="img/banner2.jpg" alt="" />
               </div>
               <div class="imageSection floatImage floatLeft">
-                <h4 class="subtitle" id="floatLeft">Left</h4>
+                <h4 id="floatLeft">Left</h4>
                 <p>
-                  <img src="img/pic01.jpg" alt="" />
+                  <img src="img/pic01.jpg" alt="blond women" />
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                   Soluta asperiores tenetur temporibus id. Nesciunt velit
                   veritatis rerum quasi neque nemo voluptatem eum nobis quisquam
@@ -483,13 +482,13 @@
                   molestiae tenetur voluptas, neque aperiam ea aliquam laborum
                   perspiciatis earum! Earum, cumque corporis dolorum odio veniam
                   animi. Repellat, sint impedit ullam, doloremque molestias
-                  voluptatibus sapiente repudiandae odio possimus molestiae sunt.
+                  voluptatibus sapiente repudiandae odio possimus molestiae.
                 </p>
               </div>
               <div class="imageSection floatImage floatRight">
-                <h4 class="subtitle">Right</h4>
+                <h4>Right</h4>
                 <p>
-                  <img src="img/pic02.jpg" alt="" />
+                  <img src="img/pic02.jpg" alt="city at night" />
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
                   aliquam aperiam laborum inventore eum dolorem maxime corporis
                   saepe voluptatum tempore unde eligendi, quam ipsum rerum
@@ -509,11 +508,12 @@
           </div>
           
           <!--BOX -->
-          <div class="subSection">
+          <div class="subSection" id="box">
             <h3>Box</h3>
             <div class="box">
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque laudantium est consequatur modi nesciunt autem nulla esse deleniti voluptatibus tempore facilis ipsa similique quibusdam sint laboriosam, amet mollitia sed iure pariatur saepe odit ducimus iusto tenetur? Necessitatibus debitis iusto repellat eaque, eum nam vel asperiores tempore perferendis reprehenderit reiciendis adipisci atque sit aspernatur.
             </div>
+          </div>
         </div>
       </div>
     </main>
@@ -536,7 +536,7 @@
         <!-- add copyright CODE SPACE link -->
         <div class="copyright">
           <h4>
-            Made with <i class="fa-solid fa-heart"></i> by
+            Made with <i class="fa-solid fa-heart"></i>by
             <a class="codespace" href="https://codespaceacademy.com/"
               >CODE SPACE</a> Team.
           </h4>
