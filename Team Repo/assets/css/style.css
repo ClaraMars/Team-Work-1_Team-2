@@ -30,20 +30,22 @@
     --blue-footer: #504651; /*Giselle*/
 }
 
-body{
+/* body{
   max-width: 1400px;
   margin: auto;
-}
+} */
 
 /* ESTILOS GENERALES Team1*/
 
 /* Etiqueta code */
 code{
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1.625rem;
   background-color: var(--background-gray);
   padding: .2em .3em;
   margin: 0 .2em;
   border-radius: .4rem;
+  font-weight: 300;
 }
 
 a{
@@ -64,33 +66,43 @@ div.section{
 }
 
 div.section h2{
-  font-size: 3rem;
-  font-weight: var(--font-weight);
+  font-size: 4rem;
+  font-weight: 300;
   padding: 1.8em 0 .8em;
   letter-spacing: -.1rem;
 }
 
 div.section p{
-  font-size: 1.3rem;
+  font-size: 2rem;
   font-weight: var(--font-weight);
   line-height: var(--line-height);
+}
+
+div.section p span#strong{
+  font-weight: 400;
 }
 
 div.gallery{
   margin-top: 5em;
   display: flex;
-  overflow-x: scroll;
 }
 
-div.gallery div.images div img{
+div.gallery div.images {
+  width: 100%;
+  position: relative;
+  flex-grow: 1;
+}
+
+div.gallery div.images img{
   margin-right: -.1em;
+  width: 100%;
+  height: auto;
 }
 
 /* Gallery Hover */
 
-div.images {
-  position: relative;
-}
+/* div.images {
+} */
 
 div.galleryHover{
   position: absolute;
@@ -98,26 +110,27 @@ div.galleryHover{
   opacity: 0;
   background-color: rgba(0, 0, 0, .5);
   color: var(--white);
-  padding: 4.78em 4em 4.3em;
+  padding: 6.5em 4em 5em;
   text-align: center;
+  flex-grow: 1;
 }
 
 div.galleryHover h3{
-  font-size: 1.5rem;
-  font-weight: var(--font-weight);
+  font-size: 1.9rem;
+  font-weight: 300;
   margin-bottom: 1em;
 }
 
 div.galleryHover p{
-  font-size: 1rem;
-  font-weight: var(--font-weight);
+  font-size: 1.5rem;
+  font-weight: 300;
   margin-bottom: 1em;
 }
 
 div.galleryHover button{
   color: var(--white);
-  font-size: .6rem;
-  font-weight: var(--font-weight);
+  font-size: .8rem;
+  font-weight: 300;
   padding: 1.3em 2.5em;
   margin: 1.2em;
   background-color: transparent;
@@ -130,25 +143,6 @@ div.images:hover div.galleryHover{
   opacity: 1;
 }
 
-/* Gallery Modal Window */
-/* div.imageFullScreen{
-  opacity: 0;
-} */
-
-/* .galleryFullScreen.imageFullScreen{
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, .5);
-  opacity: 1;
-}
-
-.galleryFullScreen.imageFullScreen img{
-  width: 100%;
-  height: auto;
-  margin: auto;
-} */
-
-
 /* ITEMS */
 
 main div.section div#items{
@@ -160,10 +154,10 @@ main div.section div#items{
 }
 
 main div.section div#items div.card-items{
-  font-size: 1.3rem;
+  font-size: 2rem;
   font-weight: var(--font-weight);
   line-height: var(--line-height);
-  padding: 2.2em 2.8em ;
+  padding: 2.2em 2.6em ;
   border-right: 1px solid var(--general-gray);
   border-bottom: 1px solid var(--general-gray);
 }
@@ -192,8 +186,8 @@ div.card-items div.icon{
 }
 
 div.card-items div.icon i{
-  font-size: 1.9rem;
-  margin-top: .68em;
+  font-size: 2.5rem;
+  margin-top: .9em;
 }
 
 div.card-items div.number{
@@ -216,22 +210,31 @@ main div.big-section div.section div.subSection{
   border-bottom: 1.5px solid var(--general-gray);
 }
 
+main div.big-section div.section div#text{
+  padding: 2em 1em 3em 0;
+}
+
 div.subSection h3{
-  font-size: 1.8rem;
+  font-size: 2.5rem;
   font-weight: var(--font-weight);
+}
+
+div#text h3#h3Text{
+  padding-top: .4em;
 }
 
 div.subSection div.text{
-  font-size: 1.2rem;
+  font-size: 1.9rem;
   font-weight: var(--font-weight);
   line-height: var(--line-height);
-  text-align: center;
-  padding-bottom: 4em;
-  padding-right: 1em;
+  text-align: left;
+  /* padding: 1.5em 1em 3em 0; */
+  /* padding-bottom: 4em;
+  padding-right: 1em; */
 }
 
-div.subSection div span#bold{
-  font-weight: bold;
+div.subSection div span#bold, strong{
+  font-weight: 400;
 }
 
 div.subSection div span#italic{
@@ -241,7 +244,7 @@ div.subSection div span#italic{
 /* FORM */
 
 div.subSection form{
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   font-weight: var(--font-weight);
   line-height: var(--line-height);
   text-align: left;
@@ -251,7 +254,7 @@ div.subSection form{
 /* Input Name and Email */
 
 form label{
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   font-weight: 400;
 }
 
@@ -264,8 +267,8 @@ form .input{
 form .input div input{
   border: 1px solid var(--general-gray);
   border-radius: .4rem;
-  min-width: 25em;
-  padding: .8em 1em;
+  min-width: 35em;
+  padding: 1.2em 1em;
   margin: 1em 0 2em;
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: var(--font-weight);
@@ -279,7 +282,7 @@ form .input div label #name{
 
 form .select div select{
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   font-weight: var(--font-weight);
   border: 1px solid var(--general-gray);
   border-radius: .4rem;
@@ -291,11 +294,10 @@ form .select div select{
   -moz-appearance: none;
 
   /* Selector arrow */
-
   background-image: url(../../img/arrow.png);
   background-repeat: no-repeat;
-  background-position: 43em;
-  background-size: 20px;
+  background-position: 40em;
+  background-size: 30px;
 }
 
 form .select div select:focus{
@@ -313,7 +315,7 @@ form .priority{
 
 form .priority div:nth-last-of-type(2),
 form .priority div:nth-last-of-type(3){
-  margin-right: 8.5em;
+  margin-right: 7em;
 }
 
   /* Radio :checked */
@@ -323,11 +325,11 @@ form .priority div input{
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
-  width: 25px;
-  height: 25px;
+  width: 35px;
+  height: 35px;
   border: 1px solid var(--general-gray);
   border-radius: 50%;
-  margin-bottom: -.5em;
+  margin-bottom: -.7em;
 }
 
 form .priority div input:checked{
@@ -336,7 +338,7 @@ form .priority div input:checked{
   background-image: url(../../img/tick.png);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 12px;
+  background-size: 20px;
 }
 
 /* Textarea */
@@ -354,12 +356,11 @@ form .textarea #textarea textarea{
 /* Checkbox */
 
 form .checkbox input{
-  margin-right: 1em;
   margin-bottom: 2em;
 }
 
 form .checkbox input:last-of-type{
-  margin-left: 6em;
+  margin-left: 10em;
 }
 
   /* Checkbox :checked */
@@ -369,10 +370,10 @@ form .checkbox input{
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
-  width: 25px;
-  height: 25px;
+  width: 35px;
+  height: 35px;
   border: 1px solid var(--general-gray);
-  border-radius: .3rem;
+  border-radius: .4rem;
   margin-bottom: -.5em;
 }
   
@@ -382,23 +383,23 @@ form .checkbox input:checked{
   background-image: url(../../img/tick.png);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 12px;
+  background-size: 20px;
 }
 
 /* Button */
 
 form button{
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 400;
-  padding: 1.1em 2.2em;
-  border: 1px solid var(--general-gray);
+  padding: 1.5em 2.8em;
+  border: 1.5px solid var(--general-gray);
   border-radius: 6rem;
   background-color: var(--white);
   color: var(--black);
-  margin: 2.5em 0 4em;
+  margin: 2.5em 0 5em;
   cursor: pointer;
-  letter-spacing: .1em;
+  letter-spacing: .2em;
 }
 
 /* Form Focus y Hover */
