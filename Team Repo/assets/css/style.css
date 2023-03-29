@@ -41,6 +41,26 @@ img{
 
 /* HEADER */
 
+/* Etiqueta code */
+code{
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1.625rem;
+  font-weight: 300;
+  background-color: var(--background-gray);
+  padding: .2em .3em;
+  margin: 0 .2em;
+  border-radius: .4rem;
+}
+
+a{
+  color: var(--black);
+}
+
+a:hover{
+  color: var(--light-blue);
+  text-decoration: none;
+}
+
 header{
   width: 99vw;
   height: 100vh;
@@ -74,7 +94,7 @@ header h1{
 
 header h1 i{
   font-size: 6rem;
-  margin-right: -.4em;
+  /* margin-right: -.4em; */
 }
 
 /* header "red" CODE title span */
@@ -124,7 +144,7 @@ main section.spotlight a:hover{
 }
 
 /* color code for header and spotlight */
-header p code,
+/* header p code,
 main section.spotlight p code{
   font-family: 'Roboto Mono', monospace;
   font-size: 1.5rem;
@@ -132,7 +152,7 @@ main section.spotlight p code{
   padding: .2em .3em;
   margin: 0 .2em;
   border-radius: .4rem;
-}
+} */
 
 /* button for header and spotlight */
 header div.button-header button,
@@ -216,29 +236,14 @@ main section.spotlight div.spotlight-section div.spotlight-text h2{
 
 /* ESTILOS GENERALES Team1*/
 
-/* Etiqueta code */
-code{
-  font-family: 'Roboto Mono', monospace;
-  font-size: 1.625rem;
-
-  font-weight: 300;
-}
-
-a{
-  color: var(--black);
-}
-
-a:hover{
-  color: var(--light-blue);
-  text-decoration: none;
-}
-
 /* GALLERY */
 
 div.section{
   text-align: center;
   width: 75%;
   margin: auto;
+  /* margin-top: 5em;
+  border-top: 1.5px solid var(--border-section-gray); */
 }
 
 div.section h2{
@@ -318,6 +323,11 @@ div.images:hover div.galleryHover{
 
 /* ITEMS */
 
+main div.big-section{
+  border-bottom: 1.5px solid var(--border-section-gray);
+  padding-bottom: 3em;
+}
+
 main div.section div#items{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -356,11 +366,13 @@ div.card-items div.icon{
   width: 3.5em;
   height: 3.5em;
   margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 div.card-items div.icon i{
   font-size: 2.5rem;
-  margin-top: .9em;
 }
 
 div.card-items div.number{
@@ -370,27 +382,35 @@ div.card-items div.number{
 
 /* ADDITIONAL ELEMENTS */
 
-main div.big-section{
+/* main div.section{
   margin-top: 5em;
   border-top: 1.5px solid var(--border-section-gray);
-}
+} */
+/* main div.big-section{
+  margin-top: 5em;
+  border-top: 1.5px solid var(--border-section-gray);
+} */
 
-main div.big-section div.section div.subSection{
+div.section div.subSection{
   margin: 4em;
   display: grid;
   grid-template-columns: 1.15fr 3fr;
   justify-items: left;
   border-bottom: 1.5px solid var(--general-gray);
+  font-weight: var(--font-weight);
+  text-align: left;
+  /* width: 75%;
+  margin: auto; */
 }
 
-main div.big-section div.section div#text{
+div.section div#text{
   padding: 2em 1em 3em 0;
 }
 
-div.subSection h3{
+/* div.subSection h3{
   font-size: 2.5rem;
   font-weight: var(--font-weight);
-}
+} */
 
 div#text h3#h3Text{
   padding-top: .4em;
@@ -418,7 +438,7 @@ div.subSection div span#italic{
 
 /* Headings */
 /* ESTILOS SUBSECTION JUANMI */
-main div.big-section {
+/* main div.big-section {
   margin-top: 5em;
   font-weight: var(--font-weight);
 }
@@ -426,17 +446,17 @@ main div.big-section {
 main div.big-section div.section {
   width: 75%;
   margin: auto;
-}
+} */
 
-main div.big-section div.section div.subSection {
+/* main div.big-section div.section div.subSection {
   margin: 4em;
   display: grid;
   grid-template-columns: 1.15fr 3fr;
   justify-items: left;
   border-bottom: 1.5px solid var(--general-gray);
-}
+} */
 
-main div.big-section div.section div.subSection h3 {
+div.section div.subSection h3 {
   font-size: 2.9rem;
   font-weight: var(--font-weight);
   padding-top: .6em;
@@ -804,7 +824,7 @@ div.buttons .white:hover{
   height: 65px;  
 }
 
-.fa-solid {
+div.buttons .fa-solid {
   padding-right: 0.5em;
 }
 
