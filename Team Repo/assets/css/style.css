@@ -42,7 +42,7 @@ img{
 /* HEADER */
 
 header{
-  width: 100vw;
+  width: 99vw;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -126,7 +126,8 @@ main section.spotlight a:hover{
 /* color code for header and spotlight */
 header p code,
 main section.spotlight p code{
-  font-family: "Courier New", Courier, monospace;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1.5rem;
   background-color: var(--background-gray);
   padding: .2em .3em;
   margin: 0 .2em;
@@ -176,7 +177,7 @@ main section.spotlight div.spotlight-section{
 main section.spotlight div.spotlight-section div.spotlight-image{
   width: 35%;
   height: 100%;
-  align-self: stretch;
+  /* align-self: stretch; */
 }
 
 main section.spotlight div.spotlight-section div.spotlight-image img{
